@@ -34,7 +34,7 @@ class Navigation extends Component {
                             <li className="nav-item">                                
                                 <div className="btn text-white btn-login mx-auto" role="button">
                                     <NavLink to="/dang-nhap" className="text-white block" activeStyle={{ fontWeight: "bold", color: "#00a8ad" }} >
-                                     <i class="fa fa-user-circle-o text-white fa-16 mr-1" aria-hidden="true"></i>
+                                     <i className="fa fa-user-circle-o text-white fa-16 mr-1" aria-hidden="true"></i>
                                     Đăng nhập</NavLink>
                                 </div>
                             </li>

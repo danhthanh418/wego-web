@@ -32,8 +32,8 @@ class TourDetail extends Component {
                       <span className="col"><i className=" mr-1 fa fa-clock-o" />6 Ngày 5 Đêm</span><br className="visible-xs" />
                       <span className="col">
                         <i className=" mr-1 fa fa-send" />Phương tiện:
-        <i className=" mr-1 fa fa-plane m-1" data-toggle="tooltip" title data-original-title="Di chuyển bằng Máy bay" />
-                        <i className=" mr-1 fa fa-bus" data-toggle="tooltip" title data-original-title="Di chuyển bằng Ô tô" />
+        <i className=" mr-1 fa fa-plane m-1" data-toggle="tooltip" title="Di chuyển bằng Máy bay" />
+                        <i className=" mr-1 fa fa-bus" data-toggle="tooltip" title="Di chuyển bằng Ô tô" />
                       </span>
                       <br />
                       <div className="tourHeaderTourCodeDiv">
@@ -266,18 +266,18 @@ class TourDetail extends Component {
             </div>
           </div>
 
-          <div class="sticky-top col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <div class=" card float-box">
-              <div class="card-body p-2">
+          <div className="sticky-top col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div className=" card float-box">
+              <div className="card-body p-2">
                 <h4>10.000.000 VND</h4>
                 <div className=" row ngayKH">
                   <div className="col-4">KHỞI HÀNH: </div>
                   <div className="col-8">
-                    <div class="form-group">
-                      <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" />
-                        <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                          <div class="input-group-text"><i class=" mr-1 fa fa-calendar"></i></div>
+                    <div className="form-group">
+                      <div className="input-group date" id="datetimepicker1" data-target-input="nearest">
+                        <input type="text" className="form-control datetimepicker-input" data-target="#datetimepicker1" />
+                        <div className="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                          <div className="input-group-text"><i className=" mr-1 fa fa-calendar"></i></div>
                         </div>
                       </div>
                     </div>
@@ -290,7 +290,7 @@ class TourDetail extends Component {
                     <select
                       name="sltSK"
                       id="sltSK"
-                      class="form-control text-blue"
+                      className="form-control text-blue"
                       required="required"
                     >
                       <option value={0}>01 Khách</option>
