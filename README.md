@@ -1,6 +1,6 @@
 To run this app we need :
    
-  From project onpen commandline an type `npm install` to download all module from packed.js
+  From project onpen commandline an type `npm install` to download all module from packed-json.js
         
 Then  folder type `npm start` to start locall webserver to run app
 
