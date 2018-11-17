@@ -3,19 +3,52 @@ import React, {Component} from 'react';
 class TourDetail extends Component {
   render () {
     return (
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+      <div className="container">
+
+        <h1 className="pageTitle vcolor-primary m-3 hidden-xs">
+            <b className="h1">Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)
+            </b>
+        </h1>
+        <div className="row">
+          <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding tourDetailMainDiv">
               <div
                 className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding"
                 id="tour-schedule"
               >
+                <p style={{ textAlign: 'center' }}>
+                  <img
+                    src="//cdn2.ivivu.com/2018/04/13/17/ivivu-pattaya.jpg"
+                    alt=""
+                    width={710}
+                    height={399}
+                    className="img-fluid"
+                  />
+                </p>
+                <div className="row tourHeaderInfo belowCover p-0 m-0 ">
+                  <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-1 row">
+                      <span className="col"><i className=" mr-1 fa fa-map-marker" />Hồ Chí Minh</span><br className="visible-xs" />
+                      <span className="col"><i className=" mr-1 fa fa-clock-o" />6 Ngày 5 Đêm</span><br className="visible-xs" />
+                      <span className="col">
+                        <i className=" mr-1 fa fa-send" />Phương tiện:
+        <i className=" mr-1 fa fa-plane m-1" data-toggle="tooltip" title data-original-title="Di chuyển bằng Máy bay" />
+                        <i className=" mr-1 fa fa-bus" data-toggle="tooltip" title data-original-title="Di chuyển bằng Ô tô" />
+                      </span>
+                      <br />
+                      <div className="tourHeaderTourCodeDiv">
+                        <span>Mã Tour: <b className="vcolor-info">TO671</b></span>
+                      </div>
+                      <span className="col-12"><i className=" mr-1 fa fa-file" /><span className="tourNoteContent">KH: Tháng 10,11,12. Giá không áp dụng giai đoạn Lễ,Tết.</span></span>
+                    </div>
+                  </div>
+                </div>
+
                 <h3 className="tourDetailheadLine vcolor-primary">
                   LỊCH TRÌNH TOUR
                 </h3>
-                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 tourScheduleContainer">
-                  <div className="tourSchedule">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 tourScheduleContainer no-padding">
+                  <div className="tourSchedule no-padding">
                     <h3>NGÀY 01: BANGKOK – PATTAYA (-,TRƯA,TỐI)</h3>
                     <p>
                       Hướng dẫn viên đón khách tại
@@ -244,7 +277,7 @@ class TourDetail extends Component {
                       <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
                         <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" />
                         <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                          <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                          <div class="input-group-text"><i class=" mr-1 fa fa-calendar"></i></div>
                         </div>
                       </div>
                     </div>

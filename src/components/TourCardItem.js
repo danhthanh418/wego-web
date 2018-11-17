@@ -44,12 +44,21 @@ class TourCardItem extends Component {
                     <div className="card">
                         {/* <img className="card-img-top img-fluid" src="holder.js/360x225/" alt="" /> */}
                         <div className=" cardItemImage">
-                            <NavLink to={"/chi-tiet/" + this.URLStandardize(this.props.tourTitle) + '.html'}><img className="img-fluid" src={this.props.imgLink} /></NavLink>
+                            {/* <NavLink to={"/chi-tiet/" + this.URLStandardize(this.props.tourTitle) + '.html'}>
+                            <img className="img-fluid" src={this.props.imgLink} /></NavLink> */}
+                            <a href={"/chi-tiet/" }>
+                                <img className="img-fluid" src={this.props.imgLink} />
+                            </a>
                         </div>
                         <div className="card-body no-padding">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                    <NavLink to={"/chi-tiet/" + this.URLStandardize(this.props.tourTitle) + '.html'}><span class="cardItemTourName">{this.props.tourTitle}</span></NavLink>
+                                    {/* <NavLink to={"/chi-tiet/" + this.URLStandardize(this.props.tourTitle) + '.html'}>
+                                        <span class="cardItemTourName">{this.props.tourTitle}</span>
+                                    </NavLink> */}
+                                    <a href={"/chi-tiet"}>
+                                        <span class="cardItemTourName">{this.props.tourTitle}</span>
+                                    </a>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding cardItemTourDetailDiv">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-10">

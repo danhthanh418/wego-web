@@ -413,3 +413,15 @@ img {
 #datepicker>span:hover {
     cursor: pointer;
 }
+
+.pageTitle {
+    color: #003c71;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+h1,
+.h1 {
+    font-size: 36px;
+}

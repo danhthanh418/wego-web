@@ -1,19 +1,8 @@
 To run this app we need :
-   'create-react-app cli' install by 
    
-        ### `npm install -g create-react-app`
+  From project onpen commandline an type `npm install` to download all module from packed.js
         
-   download node mode
-   
-   install 'react-router-dom' in project folder by 
-   
-        ### `npm install --save react-router-dom` or `yarn add react-router-dom`
-        
-   install 'react-facebook-login' in project folder by 
-   
-        ### `npm install --save react-facebook-login` or `yarn add  react-facebook-login`
-        
-Then from project folder type `npm start`
+Then  folder type `npm start` to start locall webserver to run app
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

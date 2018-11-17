@@ -11,13 +11,13 @@ class CustomRouter extends Component {
     render() {
         return (
             <div>
-                <Route exact path="/" component={Tour}></Route>
-                <Route exact path="/chi-tiet" component={TourDetail}></Route>
-                <Route exact path="/cam-nang" component={TravelHandBook}></Route>
-                <Route exact path="/gioi-thieu" component={AboutUs}></Route>
-                <Route exact path="/giai-dap" component={Answer}></Route>
-                <Route exact path="/ho-tro" component={Support}></Route>
-                <Route exact path="/dang-nhap" component={Login}></Route>
+                <Route  exact path="/" component={Tour}></Route>
+                <Route  path="/chi-tiet" component={TourDetail}></Route>
+                <Route  path="/cam-nang" component={TravelHandBook}></Route>
+                <Route  path="/gioi-thieu" component={AboutUs}></Route>
+                <Route  path="/giai-dap" component={Answer}></Route>
+                <Route  path="/ho-tro" component={Support}></Route>
+                <Route  path="/dang-nhap" component={Login}></Route>
             </div>
         );
     }
