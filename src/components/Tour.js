@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
 import Data from './data/data.json';
 import Banner from './images/tourbanner-japan.jpg';
 import RecentCardItem from './RecentCardItem';
+import SearchBox from './SearchBox';
 
 class Tour extends Component {
   render () {
@@ -11,7 +12,11 @@ class Tour extends Component {
       <div className="container-fluid no-padding">
         {/* Begin searh */}
         <div className="tourHomeHeader m-0">
-            <img src={Banner} className="img-fluid"></img>
+            <img src={Banner} alt="" className="img-fluid"></img>
+            <div className="search-float">
+                <SearchBox></SearchBox>
+            </div>
+            {/* <img src={Banner} className="img-fluid"></img> */}
             {/* Why choose WeGo */}
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 whyWeGo">
                     <div className="container">
@@ -91,6 +96,42 @@ class Tour extends Component {
                     </h3>
                     <div class="row">
                         {/* Begin tour card item */}
+                        <TourICardtem
+                            tourID="1"
+                            tourTitle="Tour Thái Lan 5N4D: Bangkok - Kanchanaburi"
+                            imgLink="https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg"
+                            tourTime="5 ngày 4 đêm"
+                            tourCalendar="KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết."
+                            tourPrice="3.700.000 VND"
+                            onHandleClick={tourID => this.onHandleClick(tourID)}
+                        />
+                        <TourICardtem
+                            tourID="1"
+                            tourTitle="Tour Thái Lan 5N4D: Bangkok - Kanchanaburi"
+                            imgLink="https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg"
+                            tourTime="5 ngày 4 đêm"
+                            tourCalendar="KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết."
+                            tourPrice="3.700.000 VND"
+                            onHandleClick={tourID => this.onHandleClick(tourID)}
+                        />
+                        <TourICardtem
+                            tourID="1"
+                            tourTitle="Tour Thái Lan 5N4D: Bangkok - Kanchanaburi"
+                            imgLink="https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg"
+                            tourTime="5 ngày 4 đêm"
+                            tourCalendar="KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết."
+                            tourPrice="3.700.000 VND"
+                            onHandleClick={tourID => this.onHandleClick(tourID)}
+                        />
+                        <TourICardtem
+                            tourID="1"
+                            tourTitle="Tour Thái Lan 5N4D: Bangkok - Kanchanaburi"
+                            imgLink="https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg"
+                            tourTime="5 ngày 4 đêm"
+                            tourCalendar="KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết."
+                            tourPrice="3.700.000 VND"
+                            onHandleClick={tourID => this.onHandleClick(tourID)}
+                        />
                         <TourICardtem
                             tourID="1"
                             tourTitle="Tour Thái Lan 5N4D: Bangkok - Kanchanaburi"

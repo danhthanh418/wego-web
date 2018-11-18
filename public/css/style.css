@@ -106,10 +106,15 @@ footer.padding-10 {
 .price {
     font-size: 22px;
     font-weight: bold;
+    text-align: right;
 }
 
 .vcolor-info {
     color: #00c1de;
+}
+
+.cardItemPrice {
+    text-align: right;
 }
 
 .row {
@@ -516,7 +521,7 @@ h1,
     margin: 0%;
 }
 
-.card-price >p {
+.card-price>p {
     font-size: 16px;
     color: #00c1de;
     margin-right: 1rem;
@@ -526,15 +531,41 @@ h1,
     display: flex;
 }
 
-
 .card-removal {
     float: right;
 }
 
-.row-top{
+.row-top {
     height: 70%;
 }
-.row-bottom{
+
+.row-bottom {
     height: 30%;
     float: right;
+}
+
+.card-name {
+    color: #003c71;
+    font-weight: bold;
+}
+
+/* Search box */
+
+.search-box {
+    background-color: #003c71;
+}
+
+.tourHomeIntro {
+    color: white;
+}
+
+.search-float {
+    float: left;
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
+    z-index: 1000;
+    padding: 3rem;
+    font-weight: bold;
+    width: 60%;
 }
