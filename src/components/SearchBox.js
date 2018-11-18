@@ -16,7 +16,7 @@ class SearchBox extends Component {
                         </div>
                         {/*end of col*/}
                         <div className="col-auto">
-                            <button className="btn btn-lg btn-primary" type="submit"><i class="fa fa-search mr-2" aria-hidden="true"></i>Tìm</button>
+                            <button className="btn btn-lg btn-primary" type="submit"><i className="fa fa-search mr-2" aria-hidden="true"></i>Tìm</button>
                         </div>
                         {/*end of col*/}
                     </div>
