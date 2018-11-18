@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FacebookLogin from 'react-facebook-login'
 
-const apikey = '1803932543057096'
+// const apikey = '1803932543057096'
 class Login extends Component {
     constructor(props) {
         super(props);

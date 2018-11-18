@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router} from 'react-router-dom'
 import CustomRouter from './components/CustomRouter';
 
 

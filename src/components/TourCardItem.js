@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as NavLink } from 'react-router-dom'
 class TourCardItem extends Component {
     constructor(props) {
         super(props);
@@ -47,39 +46,39 @@ class TourCardItem extends Component {
                             {/* <NavLink to={"/chi-tiet/" + this.URLStandardize(this.props.tourTitle) + '.html'}>
                             <img className="img-fluid" src={this.props.imgLink} /></NavLink> */}
                             <a href={"/chi-tiet/" }>
-                                <img className="img-fluid" src={this.props.imgLink} />
+                                <img className="img-fluid" src={this.props.imgLink} alt=""/>
                             </a>
                         </div>
                         <div className="cardItemContent card-body no-padding">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-10 cardItemTourNameDiv">
+                            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-10 cardItemTourNameDiv">
                                     {/* <NavLink to={"/chi-tiet/" + this.URLStandardize(this.props.tourTitle) + '.html'}>
-                                        <span class="cardItemTourName">{this.props.tourTitle}</span>
+                                        <span className="cardItemTourName">{this.props.tourTitle}</span>
                                     </NavLink> */}
                                     <a href={"/chi-tiet"}>
-                                        <span class="cardItemTourName">{this.props.tourTitle}</span>
+                                        <span className="cardItemTourName">{this.props.tourTitle}</span>
                                     </a>
                                 </div>
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding cardItemTourDetailDiv">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-10">
-                                        <div class="row">
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <span><i class="glyphicon glyphicon-time" data-toggle="tooltip" title="" data-original-title="Thời lượng tour"></i> {this.props.tourTime} </span>
+                                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding cardItemTourDetailDiv">
+                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-10">
+                                        <div className="row">
+                                            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                <span><i className="glyphicon glyphicon-time" data-toggle="tooltip" title="" data-original-title="Thời lượng tour"></i> {this.props.tourTime} </span>
                                             </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right transportDiv">
-                                                <i class="fa fa-plane mr-2" data-toggle="tooltip" title="" data-original-title="Di chuyển bằng máy bay"></i>
-                                                <i class="fa fa-bus mr-2" data-toggle="tooltip" title="" data-original-title="Di chuyển bằng Ô tô"></i>
-                                                <i class="fa fa-ship" data-toggle="tooltip" title="" data-original-title="Di chuyển bằng Tàu thủy"></i>
+                                            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right transportDiv">
+                                                <i className="fa fa-plane mr-2" data-toggle="tooltip" title="" data-original-title="Di chuyển bằng máy bay"></i>
+                                                <i className="fa fa-bus mr-2" data-toggle="tooltip" title="" data-original-title="Di chuyển bằng Ô tô"></i>
+                                                <i className="fa fa-ship" data-toggle="tooltip" title="" data-original-title="Di chuyển bằng Tàu thủy"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
+                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
                                         <span>
-                                            <i class="fa fa-calendar mr-2"></i>{this.props.tourCalendar}
+                                            <i className="fa fa-calendar mr-2"></i>{this.props.tourCalendar}
                                         </span>
                                     </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
-                                        <span class="price vcolor-info">{this.props.tourPrice}</span>
+                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
+                                        <span className="price vcolor-info">{this.props.tourPrice}</span>
                                     </div>
                                 </div>
                             </div>

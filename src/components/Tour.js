@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import TourICardtem from './TourCardItem';
-import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
+import NavLink from 'react-router-dom/NavLink';
 import Banner from './images/tourbanner-japan.jpg';
 import RecentCardItem from './RecentCardItem';
 import SearchBox from './SearchBox';
@@ -82,18 +82,18 @@ class Tour extends Component {
         <div className="tourContainer">
           <div className="container">
                     {/* Begin tour container */}
-                    <h3 class="localHeadLine hasLine">
+                    <h3 className="localHeadLine hasLine">
                         <NavLink to="/">
                             <span>
                                 WEGO DEALS
               </span>
-                            <span class="readMoreTours hidden-xs">
-                                XEM THÊM TOURS <i class=" mr-2 fa fa-chevron-right" />
+                            <span className="readMoreTours hidden-xs">
+                                XEM THÊM TOURS <i className=" mr-2 fa fa-chevron-right" />
                             </span>
                             <span className="clearfix" />
                         </NavLink>
                     </h3>
-                    <div class="row">
+                    <div className="row">
                         {/* Begin tour card item */}
                         <TourICardtem
                             tourID="1"
