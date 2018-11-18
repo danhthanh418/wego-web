@@ -4,7 +4,7 @@ import bct from './images/bct.png';
 class Footer extends Component {
     render() {
         return (
-            <footer className="spacer-y-3 bg-lightblue padding-10">
+            <footer className="spacer-y-3 bg-light padding-10">
                 <div className="container">
                     <div className="row">
                         <div className="col">

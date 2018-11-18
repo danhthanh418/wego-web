@@ -10,7 +10,7 @@ import { BrowserRouter as Router,Route,NavLink } from 'react-router-dom'
 class CustomRouter extends Component {
     render() {
         return (
-            <div>
+            <div className="">
                 <Route  exact path="/" component={Tour}></Route>
                 <Route  path="/chi-tiet" component={TourDetail}></Route>
                 <Route  path="/cam-nang" component={TravelHandBook}></Route>

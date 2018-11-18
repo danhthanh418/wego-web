@@ -103,10 +103,6 @@ footer.padding-10 {
     color: #00c1de;
 }
 
-.tourHeaderInfo {
-    font-weight: bold;
-}
-
 .row {
     margin-right: -15px;
     margin-left: -15px;
@@ -120,9 +116,27 @@ footer.padding-10 {
     border-bottom: 1px solid rgba(148, 151, 163, .15);
 }
 
-.cardItem .cardItemContainer .cardItemContent .cardItemDepartDiv {
+.cardItem .cardItemContainer .cardItemDepartDiv {
     min-height: 35px;
     padding-left: 10px
+}
+
+.cardItemContent {
+    min-height: 35px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.bg-mediumblue {
+    background-color: #dbe9f5;
+}
+
+.cardItemContent :hover {
+    background-color: #dbe9f5;
+}
+
+.cardItemContent :active {
+    background-color: #dbe9f5;
 }
 
 .no-padding {
@@ -384,7 +398,7 @@ img {
 }
 
 .bg-lightblue {
-    background-color: #e0e7ef;
+    background-color: #ecf0f5;
 }
 
 .fa-16 {
@@ -424,4 +438,43 @@ img {
 h1,
 .h1 {
     font-size: 36px;
+}
+
+/* SEARCH PANEL */
+
+.whyWeGoContainer .media {
+    color: #003c71;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.media>div>i {
+    font-size: 32px;
+    align-items: center;
+}
+
+.media-heading,
+.media-heading>b {
+    font-size: 16px;
+}
+
+.whyWeGo {
+    background-color: #e0e7ef;
+}
+
+.tourHomeHeader {
+    transition: all .2s linear;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    background-color: #e0e7ef;
+}
+
+.tourHeaderInfo {
+    font-weight: bold;
+}
+
+.tourContainer {
+    background-color: #ecf0f5;
 }
