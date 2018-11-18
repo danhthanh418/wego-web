@@ -24,10 +24,10 @@ class RecentCardItem extends Component {
                         <div className="card-removal">
                             <button
                                 type="button"
-                                class="btn btn-box-tool removeTourRecentItem"
+                                className="btn btn-box-tool removeTourRecentItem"
                                 style={{ zIndex: 3 }}
                             >
-                                <i class="fa fa-times" />
+                                <i className="fa fa-times" />
                             </button>
                             
                         </div>
