@@ -3,6 +3,7 @@ import TourICardtem from './TourCardItem';
 import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
 import Data from './data/data.json';
 import Banner from './images/tourbanner-japan.jpg';
+import RecentCardItem from './RecentCardItem';
 
 class Tour extends Component {
   render () {
@@ -44,6 +45,28 @@ class Tour extends Component {
                                         <div className="media-body media-middle">
                                             <p className="media-heading">Đội ngũ tư vấn <b>chi tiết và tận tình</b></p>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="recentContainer p-0 m-0">
+                                <h3 className="localHeadLine p-0">
+                                    Tour du lịch đã xem gần đây
+                                </h3>
+                                <div className="row p-2">
+                                    <div className="col-lg-4  col-sm-12 p-2">
+                                        <RecentCardItem></RecentCardItem>
+                                    </div>
+                                    <div className="col-lg-4  col-sm-12 p-2">
+                                        <RecentCardItem></RecentCardItem>
+                                    </div>
+                                    <div className="col-lg-4  col-sm-12 p-2">
+                                        <RecentCardItem></RecentCardItem>
+                                    </div>
+                                    <div className="col-lg-4  col-sm-12 p-2">
+                                        <RecentCardItem></RecentCardItem>
+                                    </div>
+                                    <div className="col-lg-4  col-sm-12 p-2">
+                                        <RecentCardItem></RecentCardItem>
                                     </div>
                                 </div>
                             </div>
