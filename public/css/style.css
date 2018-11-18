@@ -564,8 +564,8 @@ h1,
     position: absolute;
     left: 3rem;
     top: 3rem;
-    z-index: 1000;
-    padding: 3rem;
+    z-index: 999;
+    padding: 3em;
     font-weight: bold;
     width: 60%;
 }

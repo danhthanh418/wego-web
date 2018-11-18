@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import TourICardtem from './TourCardItem';
 import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
-import Data from './data/data.json';
 import Banner from './images/tourbanner-japan.jpg';
 import RecentCardItem from './RecentCardItem';
 import SearchBox from './SearchBox';

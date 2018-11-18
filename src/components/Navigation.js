@@ -14,26 +14,26 @@ class Navigation extends Component {
                     <div className="collapse navbar-collapse justify-content-end navMenu">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <NavLink to="/" className="nav-link h5" activeStyle={{ fontWeight: "bold", color: "#00a8ad" }}>Tour</NavLink>
+                                <NavLink to="/" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}}>Tour</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/chi-tiet" className="nav-link h5" activeStyle={{ fontWeight: "bold", color: "#00a8ad" }}>Chi tiết</NavLink>
+                                <NavLink to="/chi-tiet" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}}>Chi tiết</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/cam-nang" className="nav-link h5" activeStyle={{ fontWeight: "bold", color: "#00a8ad" }}>Cẩm nang du lịch</NavLink>
+                                <NavLink to="/cam-nang" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}}>Cẩm nang du lịch</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/gioi-thieu" className="nav-link h5" activeStyle={{ fontWeight: "bold", color: "#00a8ad" }} >Giới thiệu </NavLink>
+                                <NavLink to="/gioi-thieu" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}} >Giới thiệu </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/giai-dap" className="nav-link h5" activeStyle={{ fontWeight: "bold", color: "#00a8ad" }} >Giải đáp</NavLink>
+                                <NavLink to="/giai-dap" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}} >Giải đáp</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/ho-tro" className="nav-link h5" activeStyle={{ fontWeight: "bold", color: "#00a8ad" }} >Hỗ trợ</NavLink>
+                                <NavLink to="/ho-tro" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}} >Hỗ trợ</NavLink>
                             </li>
                             <li className="nav-item">                                
                                 <div className="btn text-white btn-login mx-auto" role="button">
-                                    <NavLink to="/dang-nhap" className="text-white block" activeStyle={{ fontWeight: "bold", color: "#00a8ad" }} >
+                                    <NavLink to="/dang-nhap" className="text-white block" >
                                      <i className="fa fa-user-circle-o text-white fa-16 mr-1" aria-hidden="true"></i>
                                     Đăng nhập</NavLink>
                                 </div>
