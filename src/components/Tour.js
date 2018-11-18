@@ -90,7 +90,7 @@ class Tour extends Component {
                             <span class="readMoreTours hidden-xs">
                                 XEM THÊM TOURS <i class=" mr-2 fa fa-chevron-right" />
                             </span>
-                            <span class="clearfix" />
+                            <span className="clearfix" />
                         </NavLink>
                     </h3>
                     <div class="row">
