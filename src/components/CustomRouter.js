@@ -6,7 +6,7 @@ import Answer from './Answer'
 import Support from './Support'
 import Login from './Login'
 import TourDetail from './TourDetail'
-import { BrowserRouter as Router,Route,NavLink } from 'react-router-dom'
+import Route  from 'react-router-dom/Route'
 class CustomRouter extends Component {
     render() {
         return (
