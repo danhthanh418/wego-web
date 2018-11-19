@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 
 class SearchDetail extends Component {
 
-    coloe
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+         chkFilter: [],
+         sltSort :0
+      }
+    }
+    
 
     onChange  = (event) =>{
         const target = event.target;
