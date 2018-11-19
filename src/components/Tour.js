@@ -57,21 +57,24 @@ class Tour extends Component {
                                     Tour du lịch đã xem gần đây
                                 </h3>
                                 <div className="row p-2">
-                                    <div className="col-lg-4  col-sm-12 p-2">
-                                        <RecentCardItem></RecentCardItem>
-                                    </div>
-                                    <div className="col-lg-4  col-sm-12 p-2">
-                                        <RecentCardItem></RecentCardItem>
-                                    </div>
-                                    <div className="col-lg-4  col-sm-12 p-2">
-                                        <RecentCardItem></RecentCardItem>
-                                    </div>
-                                    <div className="col-lg-4  col-sm-12 p-2">
-                                        <RecentCardItem></RecentCardItem>
-                                    </div>
-                                    <div className="col-lg-4  col-sm-12 p-2">
-                                        <RecentCardItem></RecentCardItem>
-                                    </div>
+                                   {TourData.map((tour,index)=>{
+                                       return (
+                                           <div className="col-lg-4  col-sm-12 p-2">
+                                               <RecentCardItem
+                                                   key={index}
+                                                   tourID={tour.id}
+                                                   tourTitle={tour.name}
+                                                   tourImg={tour.img}
+                                                   tourTime={tour.time}
+                                                   tourCalendar={tour.doc}
+                                                   tourPrice={tour.price}
+                                                   tourCategory={tour.category}
+                                                   onHandleClick={tourID => this.onHandleClick(tourID)}>
+
+                                               </RecentCardItem>
+                                           </div>
+                                       )
+                                   })}
                                 </div>
                             </div>
                         </div>
@@ -103,7 +106,7 @@ class Tour extends Component {
                                        key={index}
                                        tourID={tour.id}
                                        tourTitle={tour.name}
-                                       imgLink={tour.img}
+                                       tourImg={tour.img}
                                        tourTime={tour.time}
                                        tourCalendar={tour.doc}
                                        tourPrice={tour.price}

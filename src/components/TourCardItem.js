@@ -47,7 +47,7 @@ class TourCardItem extends Component {
                             <img className="img-fluid" src={this.props.imgLink} /></NavLink> */}
                             <a href={"/chi-tiet/" }>
                                 <figure>
-                                    <img className="img-fluid" src={this.props.imgLink} alt="" />
+                                    <img className="img-fluid" src={this.props.tourImg} alt="" />
                                 </figure>
                                 <div class="ribbon-wrapper-green">
                                     <div class="ribbon-green">{this.props.tourCategory}</div>

@@ -612,3 +612,8 @@ h1,
     border-bottom: 3px solid transparent;
     border-top: 3px solid #79A70A;
 }
+/* img flex */
+.img-flex{
+   width: 100%;
+   height: auto; 
+}

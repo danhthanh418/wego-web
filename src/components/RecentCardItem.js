@@ -12,12 +12,12 @@ class RecentCardItem extends Component {
                         <div className="col-lg-7 col-sm-9">
                             <div className="row row-top">
                                 <div className="card-name">
-                                    Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)
+                                    {this.props.tourTitle}
                                 </div>
                             </div>
                             <div className="row row-bottom">
                                 <div className="card-price text-right">
-                                    <p className="text-right"> 10.000.000</p>
+                                    <p className="text-right"> {this.props.tourPrice}</p>
                                 </div>
                             </div>
                         </div>
