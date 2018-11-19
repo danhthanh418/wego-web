@@ -107,6 +107,7 @@ class Tour extends Component {
                                        tourTime={tour.time}
                                        tourCalendar={tour.doc}
                                        tourPrice={tour.price}
+                                       tourCategory={tour.category}
                                        onHandleClick={tourID => this.onHandleClick(tourID)} /> 
                                )   
                             })

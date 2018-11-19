@@ -46,7 +46,12 @@ class TourCardItem extends Component {
                             {/* <NavLink to={"/chi-tiet/" + this.URLStandardize(this.props.tourTitle) + '.html'}>
                             <img className="img-fluid" src={this.props.imgLink} /></NavLink> */}
                             <a href={"/chi-tiet/" }>
-                                <img className="img-fluid" src={this.props.imgLink} alt=""/>
+                                <figure>
+                                    <img className="img-fluid" src={this.props.imgLink} alt="" />
+                                </figure>
+                                <div class="ribbon-wrapper-green">
+                                    <div class="ribbon-green">{this.props.tourCategory}</div>
+                                </div>
                             </a>
                         </div>
                         <div className="cardItemContent card-body no-padding">
