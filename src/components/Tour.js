@@ -59,7 +59,7 @@ class Tour extends Component {
                                 <div className="row p-2">
                                    {TourData.map((tour,index)=>{
                                        return (
-                                           <div className="col-lg-4  col-sm-12 p-2">
+                                           <div className="col-lg-4 col-sm-12 p-2">
                                                <RecentCardItem
                                                    key={index}
                                                    tourID={tour.id}
@@ -111,7 +111,8 @@ class Tour extends Component {
                                        tourCalendar={tour.doc}
                                        tourPrice={tour.price}
                                        tourCategory={tour.category}
-                                       onHandleClick={tourID => this.onHandleClick(tourID)} /> 
+                                       onHandleClick={tourID => this.onHandleClick(tourID)} />,
+                                       console.log(index)
                                )   
                             })
                         }

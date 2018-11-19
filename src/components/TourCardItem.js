@@ -49,8 +49,8 @@ class TourCardItem extends Component {
                                 <figure>
                                     <img className="img-fluid" src={this.props.tourImg} alt="" />
                                 </figure>
-                                <div class="ribbon-wrapper-green">
-                                    <div class="ribbon-green">{this.props.tourCategory}</div>
+                                <div className="ribbon-wrapper-green">
+                                    <div className="ribbon-green">{this.props.tourCategory}</div>
                                 </div>
                             </a>
                         </div>
@@ -68,7 +68,7 @@ class TourCardItem extends Component {
                                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-10">
                                         <div className="row">
                                             <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <span><i className="glyphicon glyphicon-time" data-toggle="tooltip" title="" data-original-title="Thời lượng tour"></i> {this.props.tourTime} </span>
+                                                <span><i className="fa fa-clock-o" data-toggle="tooltip" title="" data-original-title="Thời lượng tour"></i> {this.props.tourTime} </span>
                                             </div>
                                             <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right transportDiv">
                                                 <i className="fa fa-plane mr-2" data-toggle="tooltip" title="" data-original-title="Di chuyển bằng máy bay"></i>
