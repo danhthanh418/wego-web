@@ -38,7 +38,7 @@ class TourCardItem extends Component {
     render() {
 
         return (
-            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-flex align-items-stretch">
                 <div className="card-deck padding-10 cardItem" onClick={()=>this.hanldeTourDetail()}>
                     <div className="card">
                         {/* <img className="card-img-top img-fluid" src="holder.js/360x225/" alt="" /> */}
@@ -56,7 +56,7 @@ class TourCardItem extends Component {
                                         <span className="cardItemTourName">{this.props.tourTitle}</span>
                                     </NavLink> */}
                                     <a href={"/chi-tiet"}>
-                                        <span className="cardItemTourName">{this.props.tourTitle}</span>
+                                        <span className="cardItemTourName align-items-stretch">{this.props.tourTitle}</span>
                                     </a>
                                 </div>
                                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding cardItemTourDetailDiv">

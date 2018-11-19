@@ -4,7 +4,7 @@ import NavLink from 'react-router-dom/NavLink';
 import Banner from './images/tourbanner-japan.jpg';
 import RecentCardItem from './RecentCardItem';
 import SearchBox from './SearchBox';
-
+import TourData from "./data/data.json"
 class Tour extends Component {
   render () {
     return (
@@ -95,51 +95,23 @@ class Tour extends Component {
                     </h3>
                     <div className="row">
                         {/* Begin tour card item */}
-                        <TourICardtem
-                            tourID="1"
-                            tourTitle="Tour Thái Lan 5N4D: Bangkok - Kanchanaburi"
-                            imgLink="https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg"
-                            tourTime="5 ngày 4 đêm"
-                            tourCalendar="KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết."
-                            tourPrice="3.700.000 VND"
-                            onHandleClick={tourID => this.onHandleClick(tourID)}
-                        />
-                        <TourICardtem
-                            tourID="1"
-                            tourTitle="Tour Thái Lan 5N4D: Bangkok - Kanchanaburi"
-                            imgLink="https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg"
-                            tourTime="5 ngày 4 đêm"
-                            tourCalendar="KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết."
-                            tourPrice="3.700.000 VND"
-                            onHandleClick={tourID => this.onHandleClick(tourID)}
-                        />
-                        <TourICardtem
-                            tourID="1"
-                            tourTitle="Tour Thái Lan 5N4D: Bangkok - Kanchanaburi"
-                            imgLink="https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg"
-                            tourTime="5 ngày 4 đêm"
-                            tourCalendar="KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết."
-                            tourPrice="3.700.000 VND"
-                            onHandleClick={tourID => this.onHandleClick(tourID)}
-                        />
-                        <TourICardtem
-                            tourID="1"
-                            tourTitle="Tour Thái Lan 5N4D: Bangkok - Kanchanaburi"
-                            imgLink="https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg"
-                            tourTime="5 ngày 4 đêm"
-                            tourCalendar="KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết."
-                            tourPrice="3.700.000 VND"
-                            onHandleClick={tourID => this.onHandleClick(tourID)}
-                        />
-                        <TourICardtem
-                            tourID="1"
-                            tourTitle="Tour Thái Lan 5N4D: Bangkok - Kanchanaburi"
-                            imgLink="https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg"
-                            tourTime="5 ngày 4 đêm"
-                            tourCalendar="KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết."
-                            tourPrice="3.700.000 VND"
-                            onHandleClick={tourID => this.onHandleClick(tourID)}
-                        />
+
+                        {
+                            TourData.map((tour,index)=>{
+                               return (
+                                   <TourICardtem
+                                       key={index}
+                                       tourID={tour.id}
+                                       tourTitle={tour.name}
+                                       imgLink={tour.img}
+                                       tourTime={tour.time}
+                                       tourCalendar={tour.doc}
+                                       tourPrice={tour.price}
+                                       onHandleClick={tourID => this.onHandleClick(tourID)} /> 
+                               )   
+                            })
+                        }
+                          
                     </div>
           </div>
         </div>

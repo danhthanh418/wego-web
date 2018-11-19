@@ -1,83 +1,46 @@
 [
     {
-        "id":1,
-        "tourTitle":"Tour Thái Lan 5N4D: Bangkok - Kanchanaburi 1",
-        "imgLink":"https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg",
-        "tourTime":"5 ngày 4 đêm",
-        "tourCalendar":"KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết.",
-        "tourPrice":"3.700.000 VND"
-
+        "id":"TO001",
+        "name":"Tour Campuchia 4N3D Bokor - Shihanouk Ville - Kohrong - Phnôm Pênh (Deal)",
+        "img":"http://placehold.it/500x313",
+        "place":"Campuchia",
+        "time":"4 ngày 3 đêm",
+        "trans":[1,2], 
+        "doc":"KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết.",
+        "price":3900000,
+        "category":"deal"
     },
     {
-        "id":2,
-        "tourTitle":"Tour Thái Lan 5N4D: Bangkok - Kanchanaburi 2",
-        "imgLink":"https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg",
-        "tourTime":"5 ngày 4 đêm",
-        "tourCalendar":"KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết.",
-        "tourPrice":"3.700.000 VND"
-
+        "id": "TO002",
+        "name":"Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)",
+        "img": "http://placehold.it/500x313",
+        "place":"Campuchia",
+        "time":"6 ngày 5 đêm",
+        "trans":[0,1],
+        "doc":" KH: Tháng 10,11,12. Giá không áp dụng giai đoạn Lễ,Tết.",
+        "price":109900000,
+        "category":"deal"
     },
     {
-        "id":3,
-        "tourTitle":"Tour Thái Lan 5N4D: Bangkok - Kanchanaburi 3",
-        "imgLink":"https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg",
-        "tourTime":"5 ngày 4 đêm",
-        "tourCalendar":"KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết.",
-        "tourPrice":"3.700.000 VND"
-
+        "id": "TO003",
+        "name":"Tour Đài Loan 4N4D : Đài Bắc - Đài Trung - Gia Nghĩa - Cao Hùng",
+        "img": "http://placehold.it/500x313",
+        "place":"Campuchia",
+        "time":"6 ngày 5 đêm",
+        "trans":[0,1,2],
+        "doc":" KH: Tháng 10,11,12. Giá không áp dụng giai đoạn Lễ,Tết.",
+        "price":9990000,
+        "category":"deal"
     },
     {
-        "id":4,
-        "tourTitle":"Tour Thái Lan 5N4D: Bangkok - Kanchanaburi 4",
-        "imgLink":"https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg",
-        "tourTime":"5 ngày 4 đêm",
-        "tourCalendar":"KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết.",
-        "tourPrice":"3.700.000 VND"
-
-    },
-    {
-        "id":5,
-        "tourTitle":"Tour Thái Lan 5N4D: Bangkok - Kanchanaburi 5",
-        "imgLink":"https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg",
-        "tourTime":"5 ngày 4 đêm",
-        "tourCalendar":"KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết.",
-        "tourPrice":"3.700.000 VND"
-
-    },
-    {
-        "id":6,
-        "tourTitle":"Tour Thái Lan 5N4D: Bangkok - Kanchanaburi 6",
-        "imgLink":"https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg",
-        "tourTime":"5 ngày 4 đêm",
-        "tourCalendar":"KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết.",
-        "tourPrice":"3.700.000 VND"
-
-    },
-    {
-        "id":7,
-        "tourTitle":"Tour Thái Lan 5N4D: Bangkok - Kanchanaburi 7",
-        "imgLink":"https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg",
-        "tourTime":"5 ngày 4 đêm",
-        "tourCalendar":"KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết.",
-        "tourPrice":"3.700.000 VND"
-
-    },
-    {
-        "id":8,
-        "tourTitle":"Tour Thái Lan 5N4D: Bangkok - Kanchanaburi 8",
-        "imgLink":"https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg",
-        "tourTime":"5 ngày 4 đêm",
-        "tourCalendar":"KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết.",
-        "tourPrice":"3.700.000 VND"
-
-    },
-    {
-        "id":9,
-        "tourTitle":"Tour Thái Lan 5N4D: Bangkok - Kanchanaburi 9",
-        "imgLink":"https://cdn2.ivivu.com/2018/04/16/10/river-kwai-and-kanchanaburi-500x313.jpg",
-        "tourTime":"5 ngày 4 đêm",
-        "tourCalendar":"KH: thứ 5 hằng tuần. Giá không áp dụng giai đoạn Lễ,Tết.",
-        "tourPrice":"3.700.000 VND"
-
+        "id": "TO004",
+        "name":"Tour Quy Nhơn 3N4D: Quy Nhơn - Phú Yên (HD)",
+        "img": "http://placehold.it/500x313",
+        "place":"Phú Yên, Quy Nhơn",
+        "time":"3 ngày 4 đêm",
+        "trans":[0,2,3],
+        "doc":" KH: Tối thứ 5 hàng tuần. Phụ thu 500.000/khách (Lễ 2/9)",
+        "price":2990000,
+        "category":"new"
     }
 ]
