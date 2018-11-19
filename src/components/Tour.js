@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import TourICardtem from './TourCardItem';
+import TourCardItem from './TourCardItem';
 import NavLink from 'react-router-dom/NavLink';
 import Banner from './images/tourbanner-japan.jpg';
 import RecentCardItem from './RecentCardItem';
@@ -102,7 +102,7 @@ class Tour extends Component {
                         {
                             TourData.map((tour,index)=>{
                                return (
-                                   <TourICardtem
+                                   <TourCardItem
                                        key={index}
                                        tourID={tour.id}
                                        tourTitle={tour.name}
@@ -111,8 +111,7 @@ class Tour extends Component {
                                        tourCalendar={tour.doc}
                                        tourPrice={tour.price}
                                        tourCategory={tour.category}
-                                       onHandleClick={tourID => this.onHandleClick(tourID)} />,
-                                       console.log(index)
+                                       onHandleClick={tourID => this.onHandleClick(tourID)} />
                                )   
                             })
                         }
