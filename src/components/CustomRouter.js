@@ -7,6 +7,7 @@ import Support from './Support'
 import Login from './Login'
 import TourDetail from './TourDetail'
 import Route  from 'react-router-dom/Route'
+import SearchDetail from './SearchDetail';
 class CustomRouter extends Component {
     render() {
         return (
@@ -18,6 +19,7 @@ class CustomRouter extends Component {
                 <Route exact path="/giai-dap"  component={Answer}></Route>
                 <Route exact path="/ho-tro"  component={Support}></Route>
                 <Route exact path="/dang-nhap"  component={Login}></Route>
+                <Route exact path="/tim-kiem"  component={SearchDetail}></Route>
             </div>
         );
     }
