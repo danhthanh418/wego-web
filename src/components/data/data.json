@@ -2,7 +2,7 @@
     {
         "id":"TO001",
         "name":"Tour Campuchia 4N3D Bokor - Shihanouk Ville - Kohrong - Phnôm Pênh (Deal)",
-        "img":"http://placehold.it/500x313",
+        "img":"https://res.cloudinary.com/djctfdhrj/image/upload/v1542676912/wego/images/cao-nguyen-bokor-360x225.jpg",
         "place":"Campuchia",
         "time":"4 ngày 3 đêm",
         "trans":[1,2], 
@@ -13,7 +13,7 @@
     {
         "id": "TO002",
         "name":"Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)",
-        "img": "http://placehold.it/500x313",
+        "img": "https://res.cloudinary.com/djctfdhrj/image/upload/v1542677483/wego/images/singapore-and-merlion-360x225.jpg",
         "place":"Campuchia",
         "time":"6 ngày 5 đêm",
         "trans":[0,1],
@@ -24,7 +24,7 @@
     {
         "id": "TO003",
         "name":"Tour Đài Loan 4N4D : Đài Bắc - Đài Trung - Gia Nghĩa - Cao Hùng",
-        "img": "http://placehold.it/500x313",
+        "img": "https://res.cloudinary.com/djctfdhrj/image/upload/v1542677650/wego/images/toa-thap-taipei-101-360x225.jpg",
         "place":"Campuchia",
         "time":"6 ngày 5 đêm",
         "trans":[0,1,2],
@@ -35,7 +35,7 @@
     {
         "id": "TO004",
         "name":"Tour Quy Nhơn 3N4D: Quy Nhơn - Phú Yên (HD)",
-        "img": "http://placehold.it/500x313",
+        "img": "https://res.cloudinary.com/djctfdhrj/image/upload/v1542677897/wego/images/quy-nhon-city-360x225.jpg",
         "place":"Phú Yên, Quy Nhơn",
         "time":"3 ngày 4 đêm",
         "trans":[0,2,3],

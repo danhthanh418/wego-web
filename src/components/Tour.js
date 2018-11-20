@@ -70,7 +70,6 @@ class Tour extends Component {
                                                    tourPrice={tour.price}
                                                    tourCategory={tour.category}
                                                    onHandleClick={tourID => this.onHandleClick(tourID)}>
-
                                                </RecentCardItem>
                                            </div>
                                        )
