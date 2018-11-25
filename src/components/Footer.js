@@ -76,18 +76,6 @@ class Footer extends Component {
                                 Lầu 7, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, Tp. Hồ Chí Minh
               </p>
                             <p className="text-blue">
-                                <i className="fa fa-map-marker" />
-                                <b> HCM:</b>
-                                {' '}
-                                Lầu 7, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, Tp. Hồ Chí Minh
-              </p>
-                            <p className="text-blue">
-                                <i className="fa fa-map-marker" />
-                                <b> HCM:</b>
-                                {' '}
-                                Lầu 7, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, Tp. Hồ Chí Minh
-              </p>
-                            <p className="text-blue">
                                 <i className="fa fa-envelope" />
                                 <a href="mailto:wegoweb.ad@gmail.com" className="text-blue">
                                     {' '}wegoweb.ad@gmail.com

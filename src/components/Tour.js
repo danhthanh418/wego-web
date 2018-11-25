@@ -1,19 +1,49 @@
 import React, {Component} from 'react';
-import TourCardItem from './TourCardItem';
+// import TourCardItem from './TourCardItem';
 import NavLink from 'react-router-dom/NavLink';
 import Banner from './images/tourbanner-japan.jpg';
 import RecentCardItem from './RecentCardItem';
 import SearchBox from './SearchBox';
 import TourData from "./data/data.json"
+import SearchResult from './SearchResult';
 class Tour extends Component {
+
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+         items:TourData,
+         term:''
+      };
+    };
+    
+
+    onChange = (event)=>{
+        this.setState({
+            term:event.target.value
+        })
+    }
+
+    onSubmit = (event) => {
+        event.preventDefault();
+        return console.log(event.target.value)
+    }
+    
   render () {
+      const { term, items } = this.state
+      console.log(term,items)
     return (
       <div className="container-fluid no-padding">
         {/* Begin searh */}
         <div className="tourHomeHeader m-0">
             <img src={Banner} alt="" className="img-fluid"></img>
             <div className="search-float">
-                <SearchBox></SearchBox>
+                <form onSubmit = {this.onSubmit}>
+                        <SearchBox
+                            onChange={this.onChange}
+                            term={term}
+                        ></SearchBox>
+                </form>
             </div>
             {/* <img src={Banner} className="img-fluid"></img> */}
             {/* Why choose WeGo */}
@@ -95,9 +125,7 @@ class Tour extends Component {
                             <span className="clearfix" />
                         </NavLink>
                     </h3>
-                    <div className="row">
-                        {/* Begin tour card item */}
-
+                    {/* <div className="row">
                         {
                             TourData.map((tour,index)=>{
                                return (
@@ -113,9 +141,12 @@ class Tour extends Component {
                                        onHandleClick={tourID => this.onHandleClick(tourID)} />
                                )   
                             })
-                        }
-                          
-                    </div>
+                        }    
+                    </div> */}
+                    <SearchResult 
+                     items = {items}
+                     term = {term}
+                    ></SearchResult>
           </div>
         </div>
 

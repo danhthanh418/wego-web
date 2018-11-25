@@ -23,6 +23,9 @@ class Navigation extends Component {
                                 <NavLink to="/cam-nang" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}}>Cẩm nang du lịch</NavLink>
                             </li>
                             <li className="nav-item">
+                                <NavLink to="/meo" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}}>Mẹo</NavLink>
+                            </li>
+                            <li className="nav-item">
                                 <NavLink to="/gioi-thieu" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}} >Giới thiệu </NavLink>
                             </li>
                             <li className="nav-item">

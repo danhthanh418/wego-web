@@ -15,6 +15,7 @@ class CustomRouter extends Component {
                 <Route exact path="/"  component={Tour}></Route>
                 <Route exact path="/chi-tiet"  component={TourDetail}></Route>
                 <Route exact path="/cam-nang"  component={TravelHandBook}></Route>
+                <Route exact path="/meo"  component={TravelHandBook}></Route>
                 <Route exact path="/gioi-thieu"  component={AboutUs}></Route>
                 <Route exact path="/giai-dap"  component={Answer}></Route>
                 <Route exact path="/ho-tro"  component={Support}></Route>

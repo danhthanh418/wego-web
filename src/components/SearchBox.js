@@ -1,7 +1,22 @@
 import React, { Component } from 'react';
 
 class SearchBox extends Component {
+
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+         items:[],
+         term:''
+      };
+    };
+    
+    onChange = (event)=>{
+        this.props.onChange(event)
+    }
+
     render() {
+        const { term } = this.props
         return (
             <div className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12 p-3 ">
                 <form className="card card-sm bg-dark2 p-2">
@@ -12,11 +27,18 @@ class SearchBox extends Component {
                     <div className="card-body row no-gutters">
                         {/*end of col*/}
                         <div className="col">
-                            <input className="form-control form-control-lg form-control-borderless" type="search" placeholder="Tìm kiếm tour hoặc địa điểm" />
+                            <input
+                            onChange = {this.onChange}
+                            className="form-control form-control form-control-borderless" 
+                            type="search"
+                            placeholder="Tìm kiếm tour hoặc địa điểm"
+                            name= "filter"
+                            id="filter"
+                            value={term}/>
                         </div>
                         {/*end of col*/}
                         <div className="col-auto">
-                            <button className="btn btn-lg btn-primary" type="submit"><i className="fa fa-search mr-2" aria-hidden="true"></i>Tìm</button>
+                            <button className="btn btn btn-primary" type="submit"><i className="fa fa-search mr-2" aria-hidden="true"></i>Tìm</button>
                         </div>
                         {/*end of col*/}
                     </div>
