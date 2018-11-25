@@ -22,28 +22,19 @@ class Tour extends Component {
         this.setState({
             term:event.target.value
         })
-    }
-
-    onSubmit = (event) => {
-        event.preventDefault();
-        return console.log(event.target.value)
-    }
-    
+    }    
   render () {
       const { term, items } = this.state
-      console.log(term,items)
     return (
       <div className="container-fluid no-padding">
         {/* Begin searh */}
         <div className="tourHomeHeader m-0">
             <img src={Banner} alt="" className="img-fluid"></img>
             <div className="search-float">
-                <form onSubmit = {this.onSubmit}>
                         <SearchBox
                             onChange={this.onChange}
                             term={term}
                         ></SearchBox>
-                </form>
             </div>
             {/* <img src={Banner} className="img-fluid"></img> */}
             {/* Why choose WeGo */}
@@ -89,7 +80,7 @@ class Tour extends Component {
                                 <div className="row p-2">
                                    {TourData.map((tour,index)=>{
                                        return (
-                                           <div className="col-lg-4 col-sm-12 p-2">
+                                           <div className="col-lg-4 col-sm-12 p-2" key={index}>
                                                <RecentCardItem
                                                    key={index}
                                                    tourID={tour.id}
@@ -125,24 +116,6 @@ class Tour extends Component {
                             <span className="clearfix" />
                         </NavLink>
                     </h3>
-                    {/* <div className="row">
-                        {
-                            TourData.map((tour,index)=>{
-                               return (
-                                   <TourCardItem
-                                       key={index}
-                                       tourID={tour.id}
-                                       tourTitle={tour.name}
-                                       tourImg={tour.img}
-                                       tourTime={tour.time}
-                                       tourCalendar={tour.doc}
-                                       tourPrice={tour.price}
-                                       tourCategory={tour.category}
-                                       onHandleClick={tourID => this.onHandleClick(tourID)} />
-                               )   
-                            })
-                        }    
-                    </div> */}
                     <SearchResult 
                      items = {items}
                      term = {term}
