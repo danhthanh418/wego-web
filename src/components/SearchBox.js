@@ -18,11 +18,11 @@ class SearchBox extends Component {
     render() {
         const { term } = this.props
         return (
-            <div className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12 p-3 ">
-                <form className="card card-sm bg-dark2 p-2">
-                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding tourHomeIntro">
-                        <h1>Đặt tours du lịch!</h1>
-                        <h3>Hơn 300 tours du lịch ở Việt Nam và Quốc tế</h3>
+            <div className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <form className="card-sm bg-dark2 p-2">
+                    <div className="no-padding tourHomeIntro">
+                        <div className="title">Đặt tours du lịch!</div>
+                        <div className="desc">Hơn 300 tours du lịch ở Việt Nam và Quốc tế</div>
                     </div>
                     <div className="card-body row no-gutters">
                         {/*end of col*/}

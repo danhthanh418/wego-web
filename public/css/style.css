@@ -4,7 +4,9 @@
     margin: 0px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 }
-
+.clearfix {
+    overflow: auto;
+}
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -51,13 +53,12 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    background-color: #003c71;
-    color: white;
+    color: rgba(255,255,255,1)!important;
 }
 
 .navbar-dark:hover .navbar-nav:hover .nav-link:hover {
     background-color: #003c71;
-    color: #00a8ad;
+    color: #00a8ad!important;
 }
 
 .list-group-item {
@@ -184,6 +185,11 @@ img {
 
 .readMoreTours {
     float: right;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.category{
+    float:left;
     margin-top: 10px;
     margin-bottom: -10px;
 }
@@ -432,29 +438,6 @@ img {
     background: #f79321;
 }
 
-/* Create datepicker */
-
-#datepicker {
-    width: 180px;
-    margin: 0 20px 20px 20px;
-}
-
-#datepicker>span:hover {
-    cursor: pointer;
-}
-
-.pageTitle {
-    color: #003c71;
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-weight: 500;
-}
-
-h1,
-.h1 {
-    font-size: 36px;
-}
-
 /* SEARCH PANEL */
 
 .whyWeGoContainer .media {
@@ -492,6 +475,7 @@ h1,
 
 .tourContainer {
     background-color: #ecf0f5;
+    box-shadow: #222
 }
 
 /* Recent search */
@@ -550,26 +534,6 @@ h1,
     font-weight: bold;
 }
 
-/* Search box */
-
-.search-box {
-    background-color: #003c71;
-}
-
-.tourHomeIntro {
-    color: white;
-}
-
-.search-float {
-    float: left;
-    position: absolute;
-    left: 3rem;
-    top: 3rem;
-    z-index: 999;
-    padding: 3em;
-    font-weight: bold;
-    width: 60%;
-}
 
 /* Ribbon */
 
@@ -612,8 +576,29 @@ h1,
     border-bottom: 3px solid transparent;
     border-top: 3px solid #79A70A;
 }
-/* img flex */
-.img-flex{
-   width: 100%;
-   height: auto; 
+
+/* Search box */
+
+
+
+.search-box {
+    background-color: #003c71;
 }
+
+.tourHomeIntro {
+    color: white;
+}
+
+.search-float {
+    float: left;
+    position: absolute;
+    z-index: 999;
+    font-weight: bold;
+    top: 5%;
+    left:20%;
+    padding-top:10%;
+    width:40%
+}
+
+
+

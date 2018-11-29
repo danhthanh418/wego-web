@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavLink from 'react-router-dom/NavLink';
 class TourCardItem extends Component {
     constructor(props) {
         super(props);
@@ -35,34 +36,31 @@ class TourCardItem extends Component {
         // return
         return str;
     }
+    hanldeTourDetail = ()=>{
+        return <NavLink to={"/chi-tiet"}></NavLink>
+    }
     render() {
 
         return (
             <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-flex align-items-stretch">
                 <div className="card-deck padding-10 cardItem" onClick={()=>this.hanldeTourDetail()}>
                     <div className="card">
-                        {/* <img className="card-img-top img-fluid" src="holder.js/360x225/" alt="" /> */}
                         <div className=" cardItemImage">
-                            {/* <NavLink to={"/chi-tiet/" + this.URLStandardize(this.props.tourTitle) + '.html'}>
-                            <img className="img-fluid" src={this.props.imgLink} /></NavLink> */}
-                            <a href={"/chi-tiet/" }>
+                            <NavLink to={"/chi-tiet" }>
                                 <figure>
                                     <img className="img-fluid" src={this.props.tourImg} alt="" />
                                 </figure>
                                 <div className="ribbon-wrapper-green">
                                     <div className="ribbon-green">{this.props.tourCategory}</div>
                                 </div>
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="cardItemContent card-body no-padding">
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
                                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                    {/* <NavLink to={"/chi-tiet/" + this.URLStandardize(this.props.tourTitle) + '.html'}>
-                                        <span className="cardItemTourName">{this.props.tourTitle}</span>
-                                    </NavLink> */}
-                                    <a href={"/chi-tiet"}>
+                                    <NavLink to={"/chi-tiet"}>
                                         <span className="cardItemTourName align-items-stretch">{this.props.tourTitle}</span>
-                                    </a>
+                                    </NavLink>
                                 </div>
                                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding cardItemTourDetailDiv">
                                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-10">

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import FacebookLogin from 'react-facebook-login'
 
 // const apikey = '1803932543057096'
 class Login extends Component {
@@ -23,21 +22,7 @@ class Login extends Component {
         console.log('clicked')
     }
     render() {
-        let fbContent;
-        if (this.state.isLoggedIn) {
-
-        } else {
-            fbContent = (
-                <FacebookLogin
-                    appId={this.apikey}
-                    autoLoad={true}
-                    fields="name,email,picture"
-                    callback={this.responseFacebook}
-                    onClick={this.componentClicked}
-                    cssClass="btn btn-lg btn-facebook btn-block text-uppercase"
-                />
-            )
-        }
+      
         return (
             <div className="container-fluid bg-login">
                 <div className="row">
@@ -58,12 +43,6 @@ class Login extends Component {
                                         <input type="checkbox" className="custom-control-input" id="customCheck1" />
                                         <label className="custom-control-label" htmlFor="customCheck1">Remember password</label>
                                     </div>
-                                    <button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-                                    <hr className="my-4" />
-                                    <button className="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i className="fa fa-google" /> Sign in with Google</button>
-                                    <button className="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i className="fa fa-facebook" /> Sign in with Facebook</button>
-                                    <hr></hr>
-                                    {fbContent}
                                 </form>
                             </div>
                         </div>
