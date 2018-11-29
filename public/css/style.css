@@ -4,9 +4,11 @@
     margin: 0px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 }
+
 .clearfix {
     overflow: auto;
 }
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -53,12 +55,12 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255,255,255,1)!important;
+    color: rgba(255, 255, 255, 1) !important;
 }
 
 .navbar-dark:hover .navbar-nav:hover .nav-link:hover {
     background-color: #003c71;
-    color: #00a8ad!important;
+    color: #00a8ad !important;
 }
 
 .list-group-item {
@@ -188,8 +190,9 @@ img {
     margin-top: 10px;
     margin-bottom: -10px;
 }
-.category{
-    float:left;
+
+.category {
+    float: left;
     margin-top: 10px;
     margin-bottom: -10px;
 }
@@ -494,16 +497,20 @@ img {
 }
 
 .btn-box-tool {
-    padding: 5px;
     font-size: 12px;
     background: transparent;
     color: #97a0b3;
+    z-index: 3;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;
 }
 
 .removeTourRecentItem {
     padding: 0px;
     background: transparent;
-    margin: 0%;
+    z-index: 3;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .card-price>p {
@@ -533,7 +540,6 @@ img {
     color: #003c71;
     font-weight: bold;
 }
-
 
 /* Ribbon */
 
@@ -579,8 +585,6 @@ img {
 
 /* Search box */
 
-
-
 .search-box {
     background-color: #003c71;
 }
@@ -595,10 +599,7 @@ img {
     z-index: 999;
     font-weight: bold;
     top: 5%;
-    left:20%;
-    padding-top:10%;
-    width:40%
+    left: 20%;
+    padding-top: 10%;
+    width: 40%
 }
-
-
-

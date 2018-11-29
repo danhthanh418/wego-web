@@ -25,8 +25,8 @@ class RecentCardItem extends Component {
                             <button
                                 type="button"
                                 className="btn btn-box-tool removeTourRecentItem"
-                                style={{ zIndex: 3 }}
-                            >
+                                style={{ zIndex: 3,padding:0}}
+                        >
                                 <i className="fa fa-times" />
                             </button>
                             
