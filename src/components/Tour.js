@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-// import TourCardItem from './TourCardItem';
-import NavLink from 'react-router-dom/NavLink';
 import Banner from './images/tourbanner-japan.jpg';
 import RecentCardItem from './RecentCardItem';
 import SearchBox from './SearchBox';

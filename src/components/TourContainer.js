@@ -21,14 +21,14 @@ class TourContainer extends Component {
       .value ();
   };
   render () {
-    const {items, term} = this.props;
+    const {items} = this.props;
     return (
       <div className="tourContainer">
         <div className="container">
           {console.log (this.groupedByCategory (items))}
           {this.groupedByCategory (items).map ((cat, index) => {
             return (
-              <div className="tourContainer">
+              <div className="tourContainer" key={index}>
                 <div className="container">
                   <h3 className="localHeadLine hasLine" key={index}>
                     <NavLink to="/chi-tiet">
