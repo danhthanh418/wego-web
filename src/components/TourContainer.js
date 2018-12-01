@@ -54,6 +54,7 @@ class TourContainer extends Component {
                                         tourTime={tour.time}
                                         tourCalendar={tour.doc}
                                         tourPrice={tour.price}
+                                        tourPlace = {tour.place}
                                         tourCategory={tour.category} />
                                 )
                             })}

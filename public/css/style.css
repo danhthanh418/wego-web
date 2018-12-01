@@ -500,7 +500,11 @@ img {
     font-size: 12px;
     background: transparent;
     color: #97a0b3;
-    z-index: 3;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;
+    z-index: 3;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .removeTourRecentItem {
@@ -602,4 +606,23 @@ img {
     left: 20%;
     padding-top: 10%;
     width: 40%
+}
+
+/* Caption image css */
+
+figure {
+    display: inline-block;
+    /* Here !!! */
+    position: relative;
+    margin: 0;
+}
+
+figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 114, 215, .7);
+    color: white;
+    flex-wrap: wrap;
+    font-size: 16px
 }
