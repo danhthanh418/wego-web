@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 import NavLink from 'react-router-dom/NavLink'
 class Navigation extends Component {
+
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+          modal: false
+      }
+    }
+
+    onClick = ()=>{
+        this.setState({
+            modal: !this.state.modal
+        });
+    }
+    
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark2 sticky-top">
@@ -16,9 +31,6 @@ class Navigation extends Component {
                             <li className="nav-item">
                                 <NavLink to="/" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}}>Tour</NavLink>
                             </li>
-                            {/* <li className="nav-item">
-                                <NavLink to="/chi-tiet" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}}>Chi tiết</NavLink>
-                            </li> */}
                             <li className="nav-item">
                                 <NavLink to="/cam-nang" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}}>Cẩm nang du lịch</NavLink>
                             </li>
@@ -36,7 +48,7 @@ class Navigation extends Component {
                             </li>
                             <li className="nav-item">                                
                                 <div className="btn text-white btn-login mx-auto" role="button">
-                                    <NavLink to="/dang-nhap" className="text-white block" >
+                                    <NavLink to="/dang-nhap" className="text-white block"  >
                                      <i className="fa fa-user-circle-o text-white fa-16 mr-1" aria-hidden="true"></i>
                                     Đăng nhập</NavLink>
                                 </div>
