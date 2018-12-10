@@ -54,8 +54,8 @@ class TourCardItem extends Component {
                                     {this.props.tourPlace}
                                     </figcaption>
                                 </figure>
-                                <div className="ribbon-wrapper-green">
-                                    <div className="ribbon-green">{this.props.tourCategory}</div>
+                                <div className="ribbon-wrapper-red">
+                                    <div className="ribbon-red">{this.props.tourCategory}</div>
                                 </div>
                             </NavLink>
                         </div>
