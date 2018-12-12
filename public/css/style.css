@@ -83,7 +83,8 @@ body {
     font-weight: bold;
 }
 
-.btn-login:hover {
+.btn-login:hover,
+.btn-login:active {
     background: #ffc107;
     color: white;
     font-weight: bold;
@@ -500,7 +501,11 @@ img {
     font-size: 12px;
     background: transparent;
     color: #97a0b3;
-    z-index: 3;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;
+    z-index: 3;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .removeTourRecentItem {
@@ -543,7 +548,7 @@ img {
 
 /* Ribbon */
 
-.ribbon-wrapper-green {
+.ribbon-wrapper-red {
     width: 85px;
     height: 88px;
     overflow: hidden;
@@ -552,7 +557,7 @@ img {
     right: -3px;
 }
 
-.ribbon-green {
+.ribbon-red {
     font-size: 10px;
     color: #fff;
     text-transform: uppercase;
@@ -562,25 +567,25 @@ img {
     transform: rotate(45deg);
     width: 100px;
     display: block;
-    background: #79A70A;
-    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    background: #F70505;
+    background: linear-gradient(#F70505 0%, #DE0707 100%);
     box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
     position: absolute;
     top: 19px;
     right: -21px;
 }
 
-.ribbon-green:before,
-.ribbon-green:after {
+.ribbon-red:before,
+.ribbon-red:after {
     content: '';
     position: absolute;
     left: 0px;
     top: 100%;
     z-index: -1;
-    border-left: 3px solid #79A70A;
+    border-left: 3px solid #DE0707;
     border-right: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    border-top: 3px solid #79A70A;
+    border-top: 3px solid #DE0707;
 }
 
 /* Search box */
@@ -603,7 +608,61 @@ img {
     padding-top: 10%;
     width: 40%
 }
+
 /* Custom date time picker  */
 .dtp-style{
     
 }
+
+/* Caption image css */
+
+figure {
+    display: inline-block;
+    /* Here !!! */
+    position: relative;
+    margin: 0;
+}
+
+figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 114, 215, .7);
+    color: white;
+    flex-wrap: wrap;
+    font-size: 16px
+}
+
+.price-in-detail {
+    color: #ffbd00;
+}
+
+/* Scroll up button start */
+
+.scroll {
+    opacity: 0.5;
+    background-color: rgb(48, 121, 216);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.scroll:hover {
+    opacity: 1;
+}
+
+.arrow-up {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9px;
+    margin-left: -5px;
+}
+
+/* Scroll up button end */
+

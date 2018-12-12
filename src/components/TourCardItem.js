@@ -49,9 +49,13 @@ class TourCardItem extends Component {
                             <NavLink to={"/chi-tiet" }>
                                 <figure>
                                     <img className="img-fluid" src={this.props.tourImg} alt="" />
+                                    <figcaption className='pr-2'>
+                                        <i className="fa fa-map-marker m-2" data-original-title="Địa điểm" style={{color: 'orange'}}></i>
+                                    {this.props.tourPlace}
+                                    </figcaption>
                                 </figure>
-                                <div className="ribbon-wrapper-green">
-                                    <div className="ribbon-green">{this.props.tourCategory}</div>
+                                <div className="ribbon-wrapper-red">
+                                    <div className="ribbon-red">{this.props.tourCategory}</div>
                                 </div>
                             </NavLink>
                         </div>
