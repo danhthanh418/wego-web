@@ -1,6 +1,22 @@
 import React, {Component} from 'react';
 
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 class TourDetail extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+      startDate: new Date()
+    }
+  }
+  
+  handleChange = (date)=>{
+    this.setState({
+      startDate:date
+    })
+  }
   render () {
     return (
       <div className="container">
@@ -273,16 +289,21 @@ class TourDetail extends Component {
                 <div className=" row ngayKH">
                   <div className="col-4">KHỞI HÀNH: </div>
                   <div className="col-8">
-                    <div className="form-group">
+                    {/* <div className="form-group">
                       <div className="input-group date" id="datetimepicker1" data-target-input="nearest">
                         <input type="text" className="form-control datetimepicker-input" data-target="#datetimepicker1" />
                         <div className="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                           <div className="input-group-text"><i className=" mr-1 fa fa-calendar"></i></div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                        
+                    </div> */}
+                <DatePicker
+                  selected={this.state.startDate}
+                  onChange={this.handleChange}
+                  dateFormat="dd-MM-yyyy"
+                  className="dtp-style"
+                />
+                  </div>     
                 </div>
                 <div className="row soKhach">
                   <div className="col-4">SỐ KHÁCH:</div>
