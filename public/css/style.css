@@ -83,7 +83,7 @@ body {
     font-weight: bold;
 }
 
-.btn-login:hover {
+.btn-login:hover, .btn-login:active {
     background: #ffc107;
     color: white;
     font-weight: bold;

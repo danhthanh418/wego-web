@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavLink from 'react-router-dom/NavLink'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, Input, InputGroupAddon, InputGroup, FormFeedback } from 'reactstrap'
 class Navigation extends Component {
 
     constructor(props) {
@@ -9,8 +10,8 @@ class Navigation extends Component {
           modal: false
       }
     }
-
-    onClick = ()=>{
+    // modal toggle
+    toggle = () => {
         this.setState({
             modal: !this.state.modal
         });
@@ -47,12 +48,33 @@ class Navigation extends Component {
                                 <NavLink to="/ho-tro" className="nav-link h5" exact  activeStyle={{color:"#00a8ad", fontWeight:"bold"}} >Hỗ trợ</NavLink>
                             </li>
                             <li className="nav-item">                                
-                                <div className="btn text-white btn-login mx-auto" role="button">
-                                    <NavLink to="/dang-nhap" className="text-white block"  >
+                                <div className="btn text-white btn-login mx-auto" role="button" onClick={this.toggle}>
                                      <i className="fa fa-user-circle-o text-white fa-16 mr-1" aria-hidden="true"></i>
-                                    Đăng nhập</NavLink>
+                                    Đăng nhập
                                 </div>
                             </li>
+                            {/* Modal test */}
+                            <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+                                <ModalHeader toggle={this.toggle}>Đăng nhập admin</ModalHeader>
+                                <ModalBody>
+                                    <Form>
+                                        <InputGroup>
+                                            <InputGroupAddon addonType="prepend">@</InputGroupAddon>
+                                            <Input type='email' placeholder="Email đăng nhập" invalid />
+                                            <FormFeedback invalid>Cần email để đăng nhập</FormFeedback>
+                                        </InputGroup><br></br>
+                                        <InputGroup>
+                                            <InputGroupAddon addonType="prepend">*</InputGroupAddon>
+                                            <Input type='password' placeholder="Mật khẩu" invalid />
+                                            <FormFeedback invalid>Cần mật khẩu để đăng nhập</FormFeedback>
+                                        </InputGroup>
+                                    </Form>
+                                </ModalBody>
+                                <ModalFooter>
+                                    <Button color="primary" onClick={this.toggle}>Đăng nhập</Button>{' '}
+                                    <Button color="secondary" onClick={this.toggle} type='submit'>Hủy</Button>
+                                </ModalFooter>
+                            </Modal>
                             {/* <li className="dropdown">
                             <a className="nav-link h5 dropdown-toggle" to="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="components-dropdown">Components</NavLink>
                             <div className="dropdown-menu dropdown-menu-wide p-0 o-hidden dropdown-menu-right" aria-labelledby="components-dropdown">
