@@ -60,12 +60,12 @@ class Navigation extends Component {
                                     <Form>
                                         <InputGroup>
                                             <InputGroupAddon addonType="prepend">@</InputGroupAddon>
-                                            <Input type='email' placeholder="Email đăng nhập" invalid />
+                                            <Input type='email' placeholder="Email đăng nhập" invalid={true} />
                                             <FormFeedback invalid>Cần email để đăng nhập</FormFeedback>
                                         </InputGroup><br></br>
                                         <InputGroup>
                                             <InputGroupAddon addonType="prepend">*</InputGroupAddon>
-                                            <Input type='password' placeholder="Mật khẩu" invalid />
+                                            <Input type='password' placeholder="Mật khẩu" invalid={true} />
                                             <FormFeedback invalid>Cần mật khẩu để đăng nhập</FormFeedback>
                                         </InputGroup>
                                     </Form>
