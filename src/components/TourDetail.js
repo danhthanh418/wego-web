@@ -269,7 +269,7 @@ class TourDetail extends Component {
           <div className="sticky-top col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <div className=" card float-box">
               <div className="card-body p-2">
-                <h4>10.000.000 VND</h4>
+                <h4 className="price-in-detail">10.000.000 VND</h4>
                 <div className=" row ngayKH">
                   <div className="col-4">KHỞI HÀNH: </div>
                   <div className="col-8">

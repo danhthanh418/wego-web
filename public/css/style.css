@@ -628,6 +628,10 @@ figcaption {
     font-size: 16px
 }
 
+.price-in-detail {
+    color: #ffbd00;
+}
+
 /* Scroll up button start */
 
 .scroll {
@@ -656,3 +660,4 @@ figcaption {
 }
 
 /* Scroll up button end */
+
