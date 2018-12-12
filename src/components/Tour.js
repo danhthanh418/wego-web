@@ -4,6 +4,8 @@ import RecentCardItem from './RecentCardItem';
 import SearchBox from './SearchBox';
 import TourData from './data/data.json';
 import TourContainer from './TourContainer';
+// Use reactstrap
+
 class Tour extends Component {
   constructor (props) {
     super (props);
@@ -11,6 +13,7 @@ class Tour extends Component {
     this.state = {
       items: TourData,
       term: '',
+      modal: false
     };
   }
 
@@ -23,6 +26,8 @@ class Tour extends Component {
   onHandleClick = (tourID)=>{
     
   }
+
+
   render () {
     const {term, items} = this.state;
     return (
@@ -105,7 +110,7 @@ class Tour extends Component {
 
         </div>
         <TourContainer items={items} term={term} />
-
+        
       </div>
     );
   }
