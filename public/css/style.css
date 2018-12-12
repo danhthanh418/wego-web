@@ -83,7 +83,8 @@ body {
     font-weight: bold;
 }
 
-.btn-login:hover, .btn-login:active {
+.btn-login:hover,
+.btn-login:active {
     background: #ffc107;
     color: white;
     font-weight: bold;
@@ -587,8 +588,6 @@ img {
     border-top: 3px solid #DE0707;
 }
 
-
-
 /* Search box */
 
 .search-box {
@@ -628,3 +627,32 @@ figcaption {
     flex-wrap: wrap;
     font-size: 16px
 }
+
+/* Scroll up button start */
+
+.scroll {
+    opacity: 0.5;
+    background-color: rgb(48, 121, 216);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.scroll:hover {
+    opacity: 1;
+}
+
+.arrow-up {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9px;
+    margin-left: -5px;
+}
+
+/* Scroll up button end */
