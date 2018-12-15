@@ -110,7 +110,6 @@ class Tour extends Component {
 
         </div>
         <TourContainer items={items} term={term} />
-        
       </div>
     );
   }
