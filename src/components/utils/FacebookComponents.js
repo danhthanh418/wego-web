@@ -26,7 +26,7 @@ class FacebookComponents extends Component {
                 <Profile>
                     {({ loading, profile }) => (
                         <div>
-                            {profile.picture.data}
+                            {/* {profile.picture.data} */}
                             {profile.name}
                             {profile.id}
                         </div>
