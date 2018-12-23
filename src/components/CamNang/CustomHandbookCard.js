@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Card, CardTitle, CardText, CardImg, CardImgOverlay} from 'reactstrap';
-
+import {Card, CardTitle, CardText, CardImg, CardImgOverlay,Button} from 'reactstrap';
+import {Link} from 'react-router-dom'
 class CustomHandbookCard extends Component {
     render() {
         const {src,cat,title,caption} = this.props
@@ -10,7 +10,17 @@ class CustomHandbookCard extends Component {
               <CardImgOverlay style={{padding: 10, marginTop: '20%'}}>
                 <CardTitle className='font-weight-bold text-center ' style={{paddingBottom:20}}>{cat.toUpperCase()}</CardTitle>
                 <CardText className='font-weight-bold text-warning' style={{fontSize:22, color:'primary'}}>{title}</CardText>
-                {/* <CardText>{caption}</CardText> */}
+                <Link to="/cam-nang-chi-tiet">
+  <Button
+    outline
+    color="warning"
+    className="clear-fix"
+    style={{position: 'relative', bottom: '30%', left: '50%'}}
+  >
+    {' '}Xem thêm
+  </Button>
+</Link>
+
                 <CardText>
                   <small>
                     Last updated 3 mins ago

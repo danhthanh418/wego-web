@@ -1,23 +1,20 @@
 import React, {Component} from 'react';
-
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 class CamNangDetail extends Component {
      
      render (){
      	return (
-
-      <div className="mda-content mda-news-d clearfix padding_left_10">
+      <div className="mda-content mda-news-d clearfix padding_left_10 container">
         <div className="mda-left left_tin" style={{width: '100%'}}>
           <div className="mda-news-top"><h1>Ngắm tuyết ở đâu cho ngầu?</h1> </div>
           <div className="mda-info-share clearfix">
             <div className="mda-facebook">
-              <div className="fb-like" data-href="https://dulichviet.com.vn/tin-tuc/ngam-tuyet-o-dau-cho-ngau" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true" />
+              <div className="fb-like" data-href="/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true" />
             </div>
             <div className="mda-news-content">
               <p><em>Nếu bạn từng mơ được một lần trong đời được nhìn thấy tuyết thì thời điểm này là lúc thích hợp để tính chuyện khăn gói đến với mùa đông ở một nơi xa nào đó rồi nhé! Nhắm mắt lại nào! Tuyết, tuyết, tuyết! Phải ngắm tuyết ở đâu cho ngầu? Phải đứng ở nơi giá băng nào mà con tim mình tan chảy?</em></p>
-              <p><em>Hành trình <a href="https://dulichviet.com.vn/du-lich-trung-quoc">Trương Gia Giới - Phượng hoàng cổ trấn</a> có thể sẽ là câu trả lời dành cho bạn.</em></p>&nbsp;</div>
+              <p><em>Hành trình <a href="/">Trương Gia Giới - Phượng hoàng cổ trấn</a> có thể sẽ là câu trả lời dành cho bạn.</em></p>&nbsp;</div>
             <div id="ct_news">
               <p style={{textAlign: 'center'}}><img alt="Ngắm tuyết ở đâu cho ngầu?" src="//dulichviet.com.vn/images/bandidau/CH%C3%82U%20%C3%81/truong%20gia%20gioi%20700x400.png" /></p>
               <p>&nbsp;</p>

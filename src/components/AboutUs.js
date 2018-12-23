@@ -34,7 +34,7 @@ class AboutUs extends Component {
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" to="/chinh-sach-bap-mat">
+                  <Link class="nav-link" to="/chinh-sach-bao-mat">
                     Chính sách bảo mật
                   </Link>
                 </li>
