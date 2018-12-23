@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import bct from './images/bct.png';
-import FacebookComponents from './utils/FacebookComponents';
 
 class Footer extends Component {
     render() {
@@ -90,7 +89,9 @@ class Footer extends Component {
                                 >
                                     Like để cập nhật thông tin cẩm nang du lịch
                   </span>
-                                <FacebookComponents></FacebookComponents>
+                                <div>
+                                    <i className="fa fa-facebook facebook-icon"></i>
+                                </div>
                             </div>
 
                         </div>
