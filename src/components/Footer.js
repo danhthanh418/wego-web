@@ -74,7 +74,7 @@ class Footer extends Component {
                                 <i className="fa fa-map-marker" />
                                 <b> HCM:</b>
                                 {' '}
-                                Lầu 7, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, Tp. Hồ Chí Minh
+                               KTX khu B,ĐHQG Tp Hồ Chí Minh,Linh Trung, Thủ Đức
               </p>
                             <p className="text-blue">
                                 <i className="fa fa-envelope" />
