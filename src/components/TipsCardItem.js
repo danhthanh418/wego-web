@@ -41,7 +41,7 @@ class TipsCardItem extends Component {
     }
     render() {
 
-        return <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-flex align-items-stretch">
+      return <div className={this.props.rowClassName + " align-items-stretch"}>
             <div className="card-deck padding-10 cardItem" onClick={() => this.hanldeTourDetail()}>
               <div className="card">
                 <div className=" cardItemImage">
