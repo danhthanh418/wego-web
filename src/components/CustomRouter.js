@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Tour from './Tour'
-import TravelHandBook from './TravelHandBook'
 import AboutUs from './AboutUs'
 import Answer from './Answer'
 import Support from './Support'

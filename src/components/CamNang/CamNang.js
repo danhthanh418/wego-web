@@ -92,7 +92,9 @@ export default class CamNang extends Component {
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div className='row diem-den'>
+                            
+            </div>
       </div>
     )
   }

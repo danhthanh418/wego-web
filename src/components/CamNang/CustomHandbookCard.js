@@ -10,7 +10,7 @@ class CustomHandbookCard extends Component {
               <CardImgOverlay style={{padding: 10, marginTop: '20%'}}>
                 <CardTitle className='font-weight-bold text-center ' style={{paddingBottom:20}}>{cat.toUpperCase()}</CardTitle>
                 <CardText className='font-weight-bold text-warning' style={{fontSize:22, color:'primary'}}>{title}</CardText>
-                <CardText>{caption}</CardText>
+                {/* <CardText>{caption}</CardText> */}
                 <CardText>
                   <small>
                     Last updated 3 mins ago

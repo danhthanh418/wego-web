@@ -671,3 +671,8 @@ figcaption {
     -webkit-box-shadow: 0px 2px 0px #69C;
     box-shadow: 0px 2px 0px #69C;
 }
+
+.nav-link.active{
+    background-color: transparent !important ;
+    color: orange !important
+}
