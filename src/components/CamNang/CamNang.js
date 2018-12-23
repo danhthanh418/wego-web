@@ -7,7 +7,6 @@ import {
     CarouselCaption
 } from 'reactstrap'
 import tips from  '../data/tips.json'
-import TipsCardItem from '../TipsCardItem.js';
 import CustomHandbookCard from './CustomHandbookCard.js';
 const items = tips
 export default class CamNang extends Component {
