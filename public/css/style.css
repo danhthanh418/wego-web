@@ -608,6 +608,11 @@ img {
     padding-top: 10%;
     width: 40%
 }
+
+/* Custom date time picker  */
+
+.dtp-style {}
+
 /* Caption image css */
 
 figure {
@@ -658,5 +663,11 @@ figcaption {
     margin-left: -5px;
 }
 
-/* Scroll up button end */
+/* 2 line border */
 
+.two-line-border {
+    border: solid 2px #e34;
+    -moz-box-shadow: 0px 2px 0px #69C;
+    -webkit-box-shadow: 0px 2px 0px #69C;
+    box-shadow: 0px 2px 0px #69C;
+}

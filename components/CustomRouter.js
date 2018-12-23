@@ -11,14 +11,13 @@ import SearchDetail from './SearchDetail';
 import CamNangDetail from './CamNangDetail';
 import Tips from './Tips';
 import TipsDetail from './TipsDetail';
-import CamNang from './CamNang/CamNang';
 class CustomRouter extends Component {
     render() {
         return (
             <div className="bg-lightblue">
                 <Route exact path="/"  component={Tour}></Route>
                 <Route exact path="/chi-tiet"  component={TourDetail}></Route>
-                <Route exact path="/cam-nang"  component={CamNang}></Route>
+                <Route exact path="/cam-nang"  component={TravelHandBook}></Route>
                 <Route exact path="/cam-nang-chi-tiet"  component={CamNangDetail}></Route>
                 <Route exact path="/meo"  component={Tips}></Route>
                 <Route exact path="/chi-tiet-tips"  component={TipsDetail}></Route>

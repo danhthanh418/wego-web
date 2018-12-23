@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { FacebookProvider, Like, Comments, Login,Profile} from 'react-facebook';
+import { FacebookProvider, Like, Comments} from 'react-facebook';
 import Constant from './Constants'
+import Constants from './Constants';
 class FacebookComponents extends Component {
 
     constructor(props) {
