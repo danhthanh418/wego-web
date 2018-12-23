@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavLink from 'react-router-dom/NavLink';
+import NumberFormat from 'react-number-format'
 class TourCardItem extends Component {
     constructor(props) {
         super(props);
@@ -40,7 +41,7 @@ class TourCardItem extends Component {
         return <NavLink to={"/chi-tiet"}></NavLink>
     }
     render() {
-
+      const {tourPrice} = this.props;
         return <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-flex align-items-stretch">
             <div className="card-deck padding-10 cardItem" onClick={() => this.hanldeTourDetail()}>
               <div className="card">
@@ -49,7 +50,7 @@ class TourCardItem extends Component {
                     <figure>
                       <img className="img-fluid" src={this.props.tourImg} alt="" />
                       <figcaption className="pr-2">
-                          <i className="fa fa-map-marker m-2" data-original-title="Địa điểm" style={{color: 'orange'}} />
+                        <i className="fa fa-map-marker m-2" data-original-title="Địa điểm" style={{color: 'orange'}} />
                         {this.props.tourPlace}
                       </figcaption>
                     </figure>
@@ -91,9 +92,9 @@ class TourCardItem extends Component {
                         </span>
                       </div>
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
-                        <span className="price vcolor-info">
-                          {this.props.tourPrice}
-                        </span>
+                          <NumberFormat value={this.props.tourPrice} displayType={'text'} thousandSeparator={true} renderText={value => <div className="price vcolor-info">
+                                {value} VND
+                              </div>} />
                       </div>
                     </div>
                   </div>

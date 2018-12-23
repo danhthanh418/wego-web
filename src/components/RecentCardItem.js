@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import NumberFormat from 'react-number-format'
 class RecentCardItem extends Component {
     render() {
         return (
@@ -17,7 +17,9 @@ class RecentCardItem extends Component {
                             </div>
                             <div className="row row-bottom">
                                 <div className="card-price text-right">
-                                    <p className="text-right"> {this.props.tourPrice}</p>
+                                    <NumberFormat value={this.props.tourPrice} displayType={'text'} thousandSeparator={true} renderText={value => <p className="text-right">
+                                        {value} VND
+                                    </p>} />
                                 </div>
                             </div>
                         </div>
