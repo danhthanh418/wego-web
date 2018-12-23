@@ -4,6 +4,7 @@ import RecentCardItem from './RecentCardItem';
 import SearchBox from './SearchBox';
 import TourData from './data/data.json';
 import TourContainer from './TourContainer';
+import CustomDropDownList from './TimKiem/CustomDropDownList';
 // Use reactstrap
 
 class Tour extends Component {
@@ -13,7 +14,7 @@ class Tour extends Component {
     this.state = {
       items: TourData,
       term: '',
-      modal: false
+      modal: false,
     };
   }
 
@@ -23,10 +24,7 @@ class Tour extends Component {
     });
   };
 
-  onHandleClick = (tourID)=>{
-    
-  }
-
+  onHandleClick = tourID => {};
 
   render () {
     const {term, items} = this.state;
@@ -97,7 +95,7 @@ class Tour extends Component {
                             tourPrice={tour.price}
                             tourCategory={tour.category}
                             onHandleClick={tourID =>
-                            this.onHandleClick (tourID)}
+                              this.onHandleClick (tourID)}
                           />
                         </div>
                       );
@@ -110,7 +108,6 @@ class Tour extends Component {
 
         </div>
         <TourContainer items={items} term={term} />
-        
       </div>
     );
   }
