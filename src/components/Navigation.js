@@ -112,11 +112,19 @@ class Navigation extends Component {
                   Hỗ trợ
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <div className="btn text-white btn-login mx-auto" role="button" onClick={this.toggle}>
                   <i className="fa fa-user-circle-o text-white fa-16 mr-1" aria-hidden="true" />
                   Đăng nhập
                 </div>
+              </li> */}
+              <li className="nav-item">
+               <NavLink to='/dang-nhap'>
+                <div className="btn text-white btn-login mx-auto" role="button">
+                  <i className="fa fa-user-circle-o text-white fa-16 mr-1" aria-hidden="true" />
+                  Đăng nhập
+                </div>
+               </NavLink>
               </li>
               {/* Modal test */}
               <Modal isOpen={this.state.modal} toggle={this.toggle}>

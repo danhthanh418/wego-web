@@ -3,7 +3,7 @@ import {Card, CardTitle, CardText, CardImg, CardImgOverlay,Button} from 'reactst
 import {Link} from 'react-router-dom'
 class CustomHandbookCard extends Component {
     render() {
-        const {src,cat,title,caption} = this.props
+        const {src,cat,title} = this.props
         return <div>
             <Card inverse>
               <CardImg width="100%" height="20%" src={src} alt={title} />

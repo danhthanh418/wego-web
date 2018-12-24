@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Banner from './images/meo.jpg';
-import RecentCardItem from './RecentCardItem';
-import SearchBox from './SearchBox';
+// import RecentCardItem from './RecentCardItem';
+// import SearchBox from './SearchBox';
 import TourData from './data/tips.json';
 import TipsContainer from './TipsContainer';
 

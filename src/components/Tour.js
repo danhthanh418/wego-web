@@ -4,7 +4,6 @@ import RecentCardItem from './RecentCardItem';
 import SearchBox from './SearchBox';
 import TourData from './data/data.json';
 import TourContainer from './TourContainer';
-import CustomDropDownList from './TimKiem/CustomDropDownList';
 // Use reactstrap
 
 class Tour extends Component {

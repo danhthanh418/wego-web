@@ -41,7 +41,7 @@ class TourCardItem extends Component {
         return <NavLink to={"/chi-tiet"}></NavLink>
     }
     render() {
-      const {tourPrice} = this.props;
+      // const {tourPrice} = this.props;
         return <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-flex align-items-stretch">
             <div className="card-deck padding-10 cardItem" onClick={() => this.hanldeTourDetail()}>
               <div className="card">

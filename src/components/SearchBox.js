@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ResultList from './TimKiem/ResultList';
+// import ResultList from './TimKiem/ResultList';
 
 class SearchBox extends Component {
 
@@ -22,7 +22,7 @@ class SearchBox extends Component {
     }
     render() {
         const { term } = this.props
-        const {isFocus} = this.state
+        // const {isFocus} = this.state
         return (
             <div className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <form className="card-sm bg-dark2 p-2">

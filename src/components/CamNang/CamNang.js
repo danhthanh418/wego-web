@@ -54,7 +54,7 @@ export default class CamNang extends Component {
     this.setState ({activeIndex: newIndex});
   }
   render () {
-    const {activeIndex, data} = this.state;
+    const {activeIndex} = this.state;
     const slides = tips.map (item => {
       return (
         <CarouselItem
@@ -122,6 +122,8 @@ export default class CamNang extends Component {
                       caption={tour.doc}
                     />
                   );
+                }else{
+                  return undefined
                 }
               })}
             </div>
