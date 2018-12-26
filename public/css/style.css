@@ -610,9 +610,8 @@ img {
 }
 
 /* Custom date time picker  */
-.dtp-style{
-    
-}
+
+.dtp-style {}
 
 /* Caption image css */
 
@@ -664,5 +663,16 @@ figcaption {
     margin-left: -5px;
 }
 
-/* Scroll up button end */
+/* 2 line border */
 
+.two-line-border {
+    border: solid 2px #e34;
+    -moz-box-shadow: 0px 2px 0px #69C;
+    -webkit-box-shadow: 0px 2px 0px #69C;
+    box-shadow: 0px 2px 0px #69C;
+}
+
+.nav-link.active{
+    background-color: transparent !important ;
+    color: orange !important
+}

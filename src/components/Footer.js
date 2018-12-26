@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import bct from './images/bct.png';
+import FacebookComponents from './utils/FacebookComponents';
 
 class Footer extends Component {
     render() {
@@ -73,7 +74,7 @@ class Footer extends Component {
                                 <i className="fa fa-map-marker" />
                                 <b> HCM:</b>
                                 {' '}
-                                Lầu 7, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, Tp. Hồ Chí Minh
+                               KTX khu B,ĐHQG Tp Hồ Chí Minh,Linh Trung, Thủ Đức
               </p>
                             <p className="text-blue">
                                 <i className="fa fa-envelope" />
@@ -89,9 +90,7 @@ class Footer extends Component {
                                 >
                                     Like để cập nhật thông tin cẩm nang du lịch
                   </span>
-                                <div>
-                                    <i className="fa fa-facebook facebook-icon"></i>
-                                </div>
+                                <FacebookComponents></FacebookComponents>
                             </div>
 
                         </div>

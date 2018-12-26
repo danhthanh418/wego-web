@@ -25,7 +25,7 @@ class TourContainer extends Component {
     return (
       <div className="tourContainer">
         <div className="container">
-          {console.log (this.groupedByCategory (items))}
+          {/* {console.log (this.groupedByCategory (items))} */}
           {this.groupedByCategory (items).map ((cat, index) => {
             return (
               <div className="tourContainer" key={index}>

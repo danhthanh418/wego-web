@@ -5,9 +5,36 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router} from 'react-router-dom'
 import CustomRouter from './components/CustomRouter';
 import ScrollButton from './components/utils/ScrollButton';
+import fire from './components/utils/Fire';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      user:{}
+    };
+  }
+  
+  componentDidMount(){
+    this.authListener()
+  }
+  authListener = ()=>{
+    fire.auth().onAuthStateChanged((user)=>{
+      if(user){
+        this.setState({
+          user
+        });
+        localStorage.setItem('user','user.uid');
+      }else{
+        this.setState({
+          user:null
+        });
+        localStorage.removeItem('user');
+      }
+      // console.log(this.state.user)
+    })
+  }
   render() {
     return (
       <Router>

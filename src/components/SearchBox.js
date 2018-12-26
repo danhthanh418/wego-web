@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import ResultList from './TimKiem/ResultList';
 
 class SearchBox extends Component {
 
@@ -7,7 +8,8 @@ class SearchBox extends Component {
     
       this.state = {
          items:[],
-         term:''
+         term:'',
+         isFocus:undefined
       };
     };
     
@@ -15,8 +17,12 @@ class SearchBox extends Component {
         this.props.onChange(event)
     }
 
+    onFocus = ()=>{
+        this.setState({isFocus:!this.state.isFocus});
+    }
     render() {
         const { term } = this.props
+        // const {isFocus} = this.state
         return (
             <div className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <form className="card-sm bg-dark2 p-2">
@@ -34,7 +40,9 @@ class SearchBox extends Component {
                             placeholder="Tìm kiếm tour hoặc địa điểm"
                             name= "filter"
                             id="filter"
-                            value={term}/>
+                            value={term}
+                            onFocus = {this.onFocus}
+                            />
                         </div>
                         {/*end of col*/}
                         <div className="col-auto">
@@ -43,6 +51,7 @@ class SearchBox extends Component {
                         {/*end of col*/}
                     </div>
                 </form>
+                
 
             </div>
         );
