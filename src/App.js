@@ -38,12 +38,12 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Navigation></Navigation>
-          <CustomRouter></CustomRouter>
-          <Footer></Footer>
-          <ScrollButton scrollStepInPx="50" delayInMs="16.66" />
-        </div>
+          <div>
+            <Navigation></Navigation>
+              <CustomRouter></CustomRouter>
+            <Footer></Footer>
+            <ScrollButton scrollStepInPx="50" delayInMs="16.66" />
+          </div>
       </Router>
     );
   }
