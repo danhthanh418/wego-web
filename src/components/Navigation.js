@@ -87,30 +87,46 @@ class Navigation extends Component {
                   Tour
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink to="/cam-nang" className="nav-link h5" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
-                  Cẩm nang du lịch
+            <li className="dropdown">
+              <NavLink className="nav-link h5 dropdown-toggle" to="/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="components-dropdown">Cẩm nang du lịch</NavLink>
+              <div className="dropdown-menu dropdown-menu-wide p-0 o-hidden dropdown-menu-right" aria-labelledby="components-dropdown" style={{ backgroundColor:'#003c71',textDecoration:false}}>
+                <div className="list-group list-group-flush">
+                  <NavLink to="" className="">
+                    <div className="align-items-center">
+                      <li className="nav-item">
+                        <NavLink to="/cam-nang" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold'}}>
+                          Cẩm nang du lịch
                 </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/meo" className="nav-link h5" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
-                  Mẹo
+                      </li>
+                      <li className="nav-item">
+                        <NavLink to="/meo" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
+                          Mẹo
                 </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/gioi-thieu" className="nav-link h5" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
-                  Giới thiệu{' '}
+                      </li>
+                      <li className="nav-item">
+                        <NavLink to="/gioi-thieu" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
+                          Giới thiệu{' '}
+                        </NavLink>
+                      </li>
+                      <li className="nav-item">
+                        <NavLink to="/giai-dap" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
+                          Giải đáp
                 </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/giai-dap" className="nav-link h5" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
-                  Giải đáp
+                      </li>
+                      <li className="nav-item">
+                        <NavLink to="/ho-tro" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
+                          Hỗ trợ
                 </NavLink>
-              </li>
+                      </li>
+                    </div>
+                  </NavLink>
+                </div>
+              </div>
+            </li>
               <li className="nav-item">
-                <NavLink to="/ho-tro" className="nav-link h5" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
-                  Hỗ trợ
-                </NavLink>
+                <a href="tel:0975922740" className="nav-item hotline" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
+                <i class="fa fa-phone" aria-hidden="true" style={{fontSize:20,fontWeight:'bold', paddingLeft:10, paddingRight:10}}>{"   "}0975922740</i>
+                </a>
               </li>
               <li className="nav-item">
                 <div className="btn text-white btn-login mx-auto" role="button" onClick={this.toggle}>
@@ -118,14 +134,6 @@ class Navigation extends Component {
                   Đăng nhập
                 </div>
               </li>
-              {/* <li className="nav-item">
-               <NavLink to='/dang-nhap'>
-                <div className="btn text-white btn-login mx-auto" role="button">
-                  <i className="fa fa-user-circle-o text-white fa-16 mr-1" aria-hidden="true" />
-                  Đăng nhập
-                </div>
-               </NavLink>
-              </li> */}
               {/* Modal test */}
               <Modal isOpen={this.state.modal} toggle={this.toggle}>
                 <ModalHeader toggle={this.toggle}>
@@ -175,20 +183,7 @@ class Navigation extends Component {
                   </Form>
                 </ModalBody>
               </Modal>
-              {/* <li className="dropdown">
-                            <a className="nav-link h5 dropdown-toggle" to="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="components-dropdown">Components</NavLink>
-                            <div className="dropdown-menu dropdown-menu-wide p-0 o-hidden dropdown-menu-right" aria-labelledby="components-dropdown">
-                                <div className="list-group list-group-flush">
-                                    <a to="components-insight.html" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
-                                        <div className="d-flex align-items-center">
-                                            <div>
-                                                <span>Components to help you build sites faster</span>
-                                            </div>
-                                        </div>
-                                    </NavLink>
-                                </div>
-                            </div>
-                        </li> */}
+              
             </ul>
           </div>
         </div>
