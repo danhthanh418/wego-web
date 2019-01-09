@@ -103,25 +103,26 @@ class Navigation extends Component {
                           Mẹo
                 </NavLink>
                       </li>
-                      <li className="nav-item">
-                        <NavLink to="/gioi-thieu" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
-                          Giới thiệu{' '}
-                        </NavLink>
-                      </li>
-                      <li className="nav-item">
-                        <NavLink to="/giai-dap" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
-                          Giải đáp
-                </NavLink>
-                      </li>
-                      <li className="nav-item">
-                        <NavLink to="/ho-tro" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
-                          Hỗ trợ
-                </NavLink>
-                      </li>
+                    
                     </div>
                   </NavLink>
                 </div>
               </div>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/gioi-thieu" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
+                Giới thiệu{' '}
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/giai-dap" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
+                Giải đáp
+                </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/ho-tro" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
+                Hỗ trợ
+                </NavLink>
             </li>
               <li className="nav-item">
                 <a href="tel:0975922740" className="nav-item hotline" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
