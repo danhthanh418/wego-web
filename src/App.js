@@ -6,7 +6,7 @@ import { BrowserRouter as Router} from 'react-router-dom'
 import CustomRouter from './components/CustomRouter';
 import ScrollButton from './components/utils/ScrollButton';
 import fire from './components/utils/Fire';
-
+require('dotenv').config()
 
 class App extends Component {
   constructor(props) {

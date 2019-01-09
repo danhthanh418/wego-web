@@ -75,7 +75,7 @@ class Navigation extends Component {
     return <nav className="navbar navbar-expand-lg navbar-dark bg-dark2 sticky-top">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            <img alt="WeGo" src="http://placehold.it/35x35" className="rounded-circle" />
+            <img alt="WeGo" src={require('../wego_logo.png')} className="rounded-circle" style={{width:35,height:35}}/>
           </NavLink>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".navMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
