@@ -66,6 +66,7 @@ class SearchBox extends Component {
             }}
                     className='d-flex'
           >
+                    <div style={{ color:'#003c71'}}><i class="fa fa-map-marker" aria-hidden="true"></i> ĐỊA ĐIỂM HOT</div>
                     {filterdList.map((item, index) => {
                         return (
                             <Card
