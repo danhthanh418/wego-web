@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import FacebookComponents from "./utils/FacebookComponents";
 
@@ -10,13 +9,12 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Card,
   Row,
   Col
 } from "reactstrap";
 
 import TourData from "./data/data.json";
-import TourContainer from "./TourContainer";
+import RelatedTour from "./RelatedTours";
 
 class TourDetail extends Component {
   constructor(props) {
@@ -43,31 +41,33 @@ class TourDetail extends Component {
     }
   }
 
-  handleChange = date => {
-    this.setState({
-      startDate: date
+  onChange = event => {
+    this.setState ({
+      term: event.target.value,
     });
   };
+
+  onHandleClick = tourID => {};
+
   render() {
-    const { term, items } = this.state;
-    console.log(this.state.items)
+    const { term } = this.state;
     return (
       <div className="container">
-        <section className="content-header">
+        {/* <section className="content-header">
           <ol className="breadcrumb">
             <li>
-              <a href="/">Trang chủ</a>
+              <p>Trang chủ</p>
             </li>
             <li>
-              <a>Singapore</a>
+              <p>Singapore</p>
             </li>
             <li>
-              <a>
+              <p>
                 Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)
-              </a>
+              </p>
             </li>
           </ol>
-        </section>
+        </section> */}
 
         <h1 className="pageTitle vcolor-primary m-3 hidden-xs">
           <b className="h1">
@@ -82,7 +82,6 @@ class TourDetail extends Component {
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding tourDetailMainDiv">
               <div
                 className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding"
-                id="tour-schedule"
               >
                 <p style={{ textAlign: "center" }}>
                   <img
@@ -623,15 +622,12 @@ class TourDetail extends Component {
                     <div className=" row ngayKH">
                       <div className="col-4">KHỞI HÀNH: </div>
                       <div className="col-8">
-                        <DatePicker
-                          selected={this.state.startDate}
-                          onChange={this.handleChange}
-                          dateFormat="dd-MM-yyyy"
-                          className="dtp-style"
-                        />
+                        <div className="form-control">
+                          <i className="fa fa-calendar icon-calendar"></i>
+                        </div>
                       </div>
                     </div>
-                    <div className="row soKhach">
+                    <div className="row soKhach" style={{marginTop: '15px'}}>
                       <div className="col-4">SỐ KHÁCH:</div>
                       <div className="col-8">
                         <select
@@ -656,23 +652,23 @@ class TourDetail extends Component {
                   </div>
                 </div>
               </li>
-              <li>
+              <li style={{padding: '10px'}}>
                 <a href="#tour-schedule">LỊCH TRÌNH TOUR</a>
               </li>
-              <li>
+              <li style={{padding: '10px'}}>
                 <a href="#tour-services">DỊCH VỤ ĐI KÈM</a>
               </li>
-              <li>
+              <li style={{padding: '10px'}}>
                 <a href="#tour-rules">ĐIỀU KHOẢN</a>
               </li>
-              <li>
+              <li style={{padding: '10px'}}>
                 <a href="#tour-cancellation-rules">QUY ĐỊNH</a>
               </li>
             </ul>
           </div>
         </div>
-        <div style={{ backgroundColor: "transparent",padding:0}}>
-          <TourContainer items={TourData} term={term} />
+        <div style={{ backgroundColor: '#fff'}}>
+          <RelatedTour items={TourData} term={term} />
         </div>
       </div>
     );

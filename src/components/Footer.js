@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import bct from './images/bct.png';
-import FacebookComponents from './utils/FacebookComponents';
 
 class Footer extends Component {
     render() {
