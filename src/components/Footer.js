@@ -90,7 +90,7 @@ class Footer extends Component {
                                 >
                                     Like để cập nhật thông tin cẩm nang du lịch
                   </span>
-                                <FacebookComponents></FacebookComponents>
+                        
                             </div>
 
                         </div>

@@ -42,7 +42,7 @@ class App extends Component {
           <Navigation></Navigation>
           <CustomRouter></CustomRouter>
           <Footer></Footer>
-          <ScrollButton scrollStepInPx="50" delayInMs="16.66" />
+          <ScrollButton scrollStepInPx="50" delayInMs="12" />
         </div>
       </Router>
     );

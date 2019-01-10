@@ -1,5 +1,5 @@
 * {
-    font-size: 12px;
+    font-size: 14px;
     padding: 0px;
     margin: 0px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -611,7 +611,8 @@ img {
 
 /* Custom date time picker  */
 
-.dtp-style {}
+.dtp-style {
+}
 
 /* Caption image css */
 
@@ -675,4 +676,15 @@ figcaption {
 .nav-link.active{
     background-color: transparent !important ;
     color: orange !important
+}
+
+/* content header */
+
+.content-header{
+    margin-bottom: 0px;
+    background-color: #ecf0f5;
+}
+
+.breadcrumb{
+    list-style-type: none;
 }
