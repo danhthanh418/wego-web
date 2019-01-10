@@ -112,7 +112,7 @@ export default class CamNang extends Component {
           <div className="carosel col-md-4">
             <div className="row">
               {items.map ((tour, index) => {
-                if (index < 2) {
+                if (index >0 && index < 3) {
                   return (
                     <CustomHandbookCard
                       key={index}
@@ -120,6 +120,7 @@ export default class CamNang extends Component {
                       cat={'Mẹo'}
                       title={tour.name}
                       caption={tour.doc}
+                      
                     />
                   );
                 }else{

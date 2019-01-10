@@ -7,15 +7,15 @@ class CustomHandbookCard extends Component {
         return <div>
             <Card inverse>
               <CardImg width="100%" height="20%" src={src} alt={title} />
-              <CardImgOverlay style={{padding: 10, marginTop: '20%'}}>
+              <CardImgOverlay style={{padding: 10, marginTop: '10%'}}>
                 <CardTitle className='font-weight-bold text-center ' style={{paddingBottom:20}}>{cat.toUpperCase()}</CardTitle>
-                <CardText className='font-weight-bold text-warning' style={{fontSize:22, color:'primary'}}>{title}</CardText>
+                <CardText className='font-weight-bold text-warning' style={{fontSize:18, color:'primary'}}>{title}</CardText>
                 <Link to="/cam-nang-chi-tiet">
   <Button
     outline
     color="warning"
     className="clear-fix"
-    style={{position: 'relative', bottom: '30%', left: '50%'}}
+    style={{left:'50%', top:'50%',position:'relative'}}
   >
     {' '}Xem thêm
   </Button>
