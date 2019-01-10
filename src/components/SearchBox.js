@@ -21,8 +21,6 @@ class SearchBox extends Component {
         item.name.toLowerCase ().indexOf (this.state.term.toLowerCase ()) !== -1
       );
     });
-
-    console.log (filterdList);
     return (
       <div
         className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12"
@@ -46,6 +44,7 @@ class SearchBox extends Component {
                 name="filter"
                 id="filter"
                 value={this.state.term}
+                onFocus = {()=>alert('Đã focus')}
               />
             </div>
             {/*end of col*/}
