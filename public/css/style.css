@@ -601,12 +601,11 @@ img {
 .search-float {
     float: left;
     position: absolute;
-    z-index: 999;
     font-weight: bold;
     top: 5%;
     left: 20%;
     padding-top: 10%;
-    width: 40%
+    width: 606.500px
 }
 
 /* Custom date time picker  */
@@ -695,4 +694,20 @@ figcaption {
 
 a:hover {
     text-decoration: none !important;
+}
+
+/* Footer */
+
+@media (max-width: 991.98px) {
+    .footer-list {
+        display: none;
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+@media (min-width: 991.99px) {
+    .footer-list {
+        display: flex;
+    }
 }
