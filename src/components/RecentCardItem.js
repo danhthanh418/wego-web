@@ -7,7 +7,7 @@ class RecentCardItem extends Component {
                 <div className="card">
                     <div className="card-item row">
                         <div className="col-lg-4 col-sm-2">
-                            <img src="http://placehold.it/120x120" alt="" className="img-fluid"></img>
+                            <img src={this.props.tourImg} alt="" className="img-fluid"></img>
                         </div>
                         <div className="col-lg-7 col-sm-9">
                             <div className="row row-top">

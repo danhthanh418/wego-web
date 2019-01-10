@@ -1,34 +1,52 @@
 [
     {
-        "id":"M001",
-        "name":"Kinh nghiệm xin visa Úc online",
-        "img":"http://toidi.net/wp-content/uploads/2018/12/du-lich-hoa-anh-dao-nhat-ban-1.jpg",
-        "time":"20/12/2018",
-        "trans":[1,2], 
-        "doc":"Hiện tại Úc cho phép người Việt Nam đăng ký xin visa online với thủ tục rất đơn giản. Mình vừa xin thành công visa Úc nên viết bài này để chia sẻ kinh nghiệm cho các bạn đang có dự định khám phá đất nước xinh đẹp này nhé!"
+        "id": "M001",
+        "name": "Kinh nghiệm xin visa Úc online",
+        "img": "http://toidi.net/wp-content/uploads/2018/12/du-lich-hoa-anh-dao-nhat-ban-1.jpg",
+        "time": "20/12/2018",
+        "trans": [
+            1,
+            2
+        ],
+        "doc": "Hiện tại Úc cho phép người Việt Nam đăng ký xin visa online với thủ tục rất đơn giản.",
+        "category": "Mẹo"
     },
     {
         "id": "M002",
-        "name":"Rủ rê – Du lịch Nhật Bản Hoa Anh Đào 5 ngày – Osaka – Kyoto – Himeji – Kobe",
+        "name": "Rủ rê – Du lịch Nhật Bản Hoa Anh Đào 5 ngày – Osaka – Kyoto – Himeji – Kobe",
         "img": "http://toidi.net/wp-content/uploads/2018/12/du-lich-hoa-anh-dao-nhat-ban-1.jpg",
-        "time":"15/12/2018",
-        "trans":[0,1],
-        "doc":"Chương trình đặc sắc 5 ngày ngắm Hoa Anh Đào vùng Kansai bao gồm Osaka – Kyoto – Himeji – Kobe là một chương trình mới của Toidi.net. Với chi phí vừa phải, nhiều trải nghiệm, đi đúng dịp Hoa Anh Đào là một trong những chương trình mới toidi muốn gửi đến các bạn. Trong đó điểm nhấn đẹp nhất vùng Kansai là Hoa Anh Đào tại thành Himeji & cố đô Kyoto. Cùng xem chi tiết chương trình Du lịch Nhật Bản Hoa Anh Đào 5 ngày nhé"
+        "time": "15/12/2018",
+        "trans": [
+            0,
+            1
+        ],
+        "doc": "Chương trình đặc sắc 5 ngày ngắm Hoa Anh Đào vùng Kansai bao gồm Osaka – Kyoto – Himeji – Kobe là một chương trình mới của Wego.",
+        "category": "Mẹo"
     },
     {
         "id": "M003",
-        "name":"Rủ rê đi Hàn Quốc ngắm hoa anh đào 2019",
+        "name": "Rủ rê đi Hàn Quốc ngắm hoa anh đào 2019",
         "img": "http://toidi.net/wp-content/uploads/2018/11/toidi-cherry.jpg",
-        "time":"14/12/2018",
-        "trans":[0,1,2],
-        "doc":"Mùa hoa anh đào là một trong những thời điểm đẹp bên cạnh mùa thu để du lịch Hàn Quốc. Sau những chuyến đi mùa thu, năm nay toidi.net mở thêm chương trình Hàn Quốc hoa anh đào để các bạn có thể được trải nghiệm cảnh sắc thiên nhiên đầy ấn tượng của xứ sở Kim Chi."
+        "time": "14/12/2018",
+        "trans": [
+            0,
+            1,
+            2
+        ],
+        "doc": "Mùa hoa anh đào là một trong những thời điểm đẹp bên cạnh mùa thu để du lịch Hàn Quốc.",
+        "category": "Mẹo"
     },
     {
         "id": "M004",
-        "name":"Kinh nghiệm Du lịch New Delhi Ấn Độ",
+        "name": "Kinh nghiệm Du lịch New Delhi Ấn Độ",
         "img": "http://toidi.net/wp-content/uploads/2018/11/kinh-nghiem-du-lich-new-dehli.jpg",
-        "time":"01/12/2018",
-        "trans":[0,2,3],
-        "doc":"Delhi, thủ đô của đất nước Ấn Độ, một thành phố vừa mang vẻ đẹp hiện đại, tươi mới vừa đậm nét hoài cổ và truyền thống. Hãy tham khảo hướng dẫn của Toidi.net dưới đây để có chuyến du lịch thủ đô Delhi thuận lợi, vui vẻ."
+        "time": "01/12/2018",
+        "trans": [
+            0,
+            2,
+            3
+        ],
+        "doc": "Delhi, thủ đô của đất nước Ấn Độ, một thành phố vừa mang vẻ đẹp hiện đại, tươi mới vừa đậm nét hoài cổ và truyền thống. ",
+        "category": "Mẹo"
     }
 ]
