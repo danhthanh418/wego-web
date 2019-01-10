@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import TourData from './data/data.json';
-import {Card} from 'reactstrap';
-import {relative} from 'path';
-import NavLink from 'react-router-dom/NavLink';
+import {Card, CardImg, CardBody, CardText, CardTitle} from 'reactstrap';
 class SearchBox extends Component {
   constructor (props) {
     super (props);
@@ -23,6 +21,8 @@ class SearchBox extends Component {
         item.name.toLowerCase ().indexOf (this.state.term.toLowerCase ()) !== -1
       );
     });
+
+    console.log (filterdList);
     return (
       <div
         className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12"
@@ -58,16 +58,46 @@ class SearchBox extends Component {
           </div>
           <Card
             style={{
-              top: 0,
               width: '81%',
               padding: 5,
               position: 'absolute',
               top: 81,
               marginTop: 10,
             }}
+                    className='d-flex'
           >
-            {filterdList.map ((item, index) => {
-              return <div key={index}>{item.name}</div>;
+                    {filterdList.map((item, index) => {
+                        return (
+                            <Card
+                                style={{
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
+                                    flexDirection: 'row',
+                                }}
+                            >
+                                <CardImg
+                                    className="img-fluid"
+                                    src={item.img}
+                                    style={{
+                                        width: '10%',
+                                        height: '10%',
+                                        flex: 1,
+                                        padding: 5,
+                                        justifyContent: 'center',
+                                        alignItems:'center',
+                                        margin:'auto'
+                                    }}
+                                />
+                                <CardBody style={{ flex: 4, flexDirection: 'column', justifyContent:'center',alignItems:'center', margin:'0 auto'}}>
+                                    <CardText style={{ fontSize: 10, flex: 1 }}>
+                                        {item.place}
+                                    </CardText>
+                                    <CardText style={{ fontSize: 10, flex: 1 }}>
+                                        {'11 tour'}
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+              );
             })}
           </Card>
         </form>
