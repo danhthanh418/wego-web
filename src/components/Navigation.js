@@ -75,7 +75,7 @@ class Navigation extends Component {
     return <nav className="navbar navbar-expand-lg navbar-dark bg-dark2 sticky-top">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            <img alt="WeGo" src={require('../wego_logo.png')} className="rounded-circle" style={{width:35,height:35}}/>
+            <img alt="WeGo" src={require('../wego_logo.png')} className="rounded-circle" style={{width: 35, height: 35}} />
           </NavLink>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".navMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
@@ -87,46 +87,48 @@ class Navigation extends Component {
                   Tour
                 </NavLink>
               </li>
-            <li className="dropdown">
-              <NavLink className="nav-link h5 dropdown-toggle" to="/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="components-dropdown">Cẩm nang du lịch</NavLink>
-              <div className="dropdown-menu dropdown-menu-wide p-0 o-hidden dropdown-menu-right" aria-labelledby="components-dropdown" style={{ backgroundColor:'#003c71',textDecoration:false}}>
-                <div className="list-group list-group-flush">
-                  <NavLink to="" className="">
-                    <div className="align-items-center">
-                      <li className="nav-item">
-                        <NavLink to="/cam-nang" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold'}}>
-                          Cẩm nang du lịch
+              <li className="dropdown">
+                <NavLink className="nav-link h5 dropdown-toggle" to="/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="components-dropdown">
+                  Cẩm nang du lịch
                 </NavLink>
-                      </li>
-                      <li className="nav-item">
-                        <NavLink to="/meo" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
-                          Mẹo
-                </NavLink>
-                      </li>
-                    
-                    </div>
-                  </NavLink>
+                <div className="dropdown-menu dropdown-menu-wide p-0 o-hidden dropdown-menu-right" aria-labelledby="components-dropdown" style={{backgroundColor: '#003c71', textDecoration: false}}>
+                  <div className="list-group list-group-flush">
+                    <NavLink to="" className="">
+                      <div className="align-items-center">
+                        <li className="nav-item">
+                          <NavLink to="/cam-nang" className="nav-link h5" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
+                            Cẩm nang du lịch
+                          </NavLink>
+                        </li>
+                        <li className="nav-item">
+                          <NavLink to="/meo" className="nav-link h5" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
+                            Mẹo
+                          </NavLink>
+                        </li>
+                      </div>
+                    </NavLink>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/gioi-thieu" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
-                Giới thiệu{' '}
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/giai-dap" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
-                Giải đáp
+              </li>
+              <li className="nav-item">
+                <NavLink to="/gioi-thieu" className="nav-link h5" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
+                  Giới thiệu{' '}
                 </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/ho-tro" className="nav-link h5" exact activeStyle={{ color: '#00a8ad', fontWeight: 'bold' }}>
-                Hỗ trợ
+              </li>
+              <li className="nav-item">
+                <NavLink to="/giai-dap" className="nav-link h5" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
+                  Giải đáp
                 </NavLink>
-            </li>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/ho-tro" className="nav-link h5" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
+                  Hỗ trợ
+                </NavLink>
+              </li>
               <li className="nav-item">
                 <a href="tel:0975922740" className="nav-item hotline" exact activeStyle={{color: '#00a8ad', fontWeight: 'bold'}}>
-                <i class="fa fa-phone" aria-hidden="true" style={{fontSize:20,fontWeight:'bold', paddingLeft:10, paddingRight:10}}>{"   "}0975922740</i>
+                  <i class="fa fa-phone" aria-hidden="true"  style={{fontSize: 20, fontWeight: 'bold', paddingLeft: 5, paddingRight: 5}}/>
+                  <span style={{fontSize: 20, fontWeight: 'bold',paddingRight: 5}}>0975922740</span>
                 </a>
               </li>
               <li className="nav-item">
@@ -146,45 +148,42 @@ class Navigation extends Component {
                       <InputGroupAddon addonType="prepend">
                         @
                       </InputGroupAddon>
-                      <Input type="email" placeholder="Email đăng nhập" name="email" value={email} valid={ this.state.validate.emailState === 'has-success' }
-                invalid={ this.state.validate.emailState === 'has-danger' }
-                onChange={ (e) => {
-                            this.validateEmail(e)
-                            this.onHandleChange(e)
-                          } }/>
-                    <FormFeedback valid>
-                      That's a tasty looking email you've got there.
-              </FormFeedback>
-                    <FormFeedback>
-                      Uh oh! Looks like there is an issue with your email. Please input a correct email.
-              </FormFeedback>
+                      <Input type="email" placeholder="Email đăng nhập" name="email" value={email} valid={this.state.validate.emailState === 'has-success'} invalid={this.state.validate.emailState === 'has-danger'} onChange={e => {
+                          this.validateEmail(e);
+                          this.onHandleChange(e);
+                        }} />
+                      <FormFeedback valid>
+                        That's a tasty looking email you've got there.
+                      </FormFeedback>
+                      <FormFeedback>
+                        Uh oh! Looks like there is an issue with your email.
+                        Please input a correct email.
+                      </FormFeedback>
                     </InputGroup>
                     <br />
                     <InputGroup>
                       <InputGroupAddon addonType="prepend">
                         *
                       </InputGroupAddon>
-                      <Input type="password" placeholder="Mật khẩu" name="password" value={password} 
-                      onChange={(e) =>{this.validateEmail(e)
-                            this.onHandleChange(e)}} />
-                    <FormFeedback valid>
-                      Good password
-              </FormFeedback>
-                    <FormFeedback>
-                      Bad password
-              </FormFeedback>
+                      <Input type="password" placeholder="Mật khẩu" name="password" value={password} onChange={e => {
+                          this.validateEmail(e);
+                          this.onHandleChange(e);
+                        }} />
+                      <FormFeedback valid>Good password</FormFeedback>
+                      <FormFeedback>Bad password</FormFeedback>
                     </InputGroup>
-                  <ModalFooter>
-                    <Button color="primary" type="submit" onClick = {this.state.validate.emailState==='has-success'?this.toggle:()=>{return}}>
+                    <ModalFooter>
+                      <Button color="primary" type="submit" onClick={this.state.validate.emailState === 'has-success' ? this.toggle : () => {
+                                return;
+                              }}>
                         Đăng nhập
-                    </Button> <Button color="secondary" onClick={this.toggle}>
+                      </Button> <Button color="secondary" onClick={this.toggle}>
                         Hủy
-                    </Button>
-                  </ModalFooter>
+                      </Button>
+                    </ModalFooter>
                   </Form>
                 </ModalBody>
               </Modal>
-              
             </ul>
           </div>
         </div>
