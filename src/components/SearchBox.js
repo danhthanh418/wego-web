@@ -7,6 +7,7 @@ class SearchBox extends Component {
 
     this.state = {
       term: '',
+      isFocus:false
     };
   }
 
@@ -15,10 +16,61 @@ class SearchBox extends Component {
       term: event.target.value,
     });
   };
+  renderResult = (filterdList)=>{
+    if(this.state.isFocus){
+     return <Card
+        style={{
+          width: '81%',
+          padding: 5,
+          position: 'absolute',
+          top: 81,
+          marginTop: 10,
+        }}
+        className='d-flex'
+      >
+        <div style={{ color: '#003c71' }}><i class="fa fa-map-marker" aria-hidden="true"></i> ĐỊA ĐIỂM HOT</div>
+        {filterdList.map((item, index) => {
+          return (
+            <Card
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                flexDirection: 'row',
+              }}
+            >
+              <CardImg
+                className="img-fluid"
+                src={item.img}
+                style={{
+                  width: '10%',
+                  height: '10%',
+                  flex: 1,
+                  padding: 5,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  margin: 'auto'
+                }}
+              />
+              <CardBody style={{ flex: 4, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '0 auto' }}>
+                <CardText style={{ fontSize: 10, flex: 1 }}>
+                  {item.place}
+                </CardText>
+                <CardText style={{ fontSize: 10, flex: 1 }}>
+                  {'11 tour'}
+                </CardText>
+              </CardBody>
+            </Card>
+          );
+        })}
+      </Card>
+    }else if(this.state.term.length>0){
+      console.log(this.state.length)
+    }
+  }
   render () {
-    let filterdList = TourData.filter ((item, index) => {
+    let filterdList = TourData.filter((item, index) => {
       return (
-        item.name.toLowerCase ().indexOf (this.state.term.toLowerCase ()) !== -1
+        item.name.toLowerCase().indexOf(this.state.term.toLowerCase()) !== -1
       );
     });
     return (
@@ -41,10 +93,17 @@ class SearchBox extends Component {
                 className="form-control form-control form-control-borderless"
                 type="search"
                 placeholder="Tìm kiếm tour hoặc địa điểm"
-                name="filter"
-                id="filter"
+                name="term"
+                id="term"
                 value={this.state.term}
-                onFocus = {()=>alert('Đã focus')}
+                onFocus = {()=>this.setState({
+                  isFocus:true
+                })}
+                onBlur= {()=>{
+                  this.setState({
+                    isFocus:false
+                  })
+                }}
               />
             </div>
             {/*end of col*/}
@@ -55,51 +114,7 @@ class SearchBox extends Component {
             </div>
             {/*end of col*/}
           </div>
-          <Card
-            style={{
-              width: '81%',
-              padding: 5,
-              position: 'absolute',
-              top: 81,
-              marginTop: 10,
-            }}
-                    className='d-flex'
-          >
-                    <div style={{ color:'#003c71'}}><i class="fa fa-map-marker" aria-hidden="true"></i> ĐỊA ĐIỂM HOT</div>
-                    {filterdList.map((item, index) => {
-                        return (
-                            <Card
-                                style={{
-                                    display: 'flex',
-                                    flexWrap: 'wrap',
-                                    flexDirection: 'row',
-                                }}
-                            >
-                                <CardImg
-                                    className="img-fluid"
-                                    src={item.img}
-                                    style={{
-                                        width: '10%',
-                                        height: '10%',
-                                        flex: 1,
-                                        padding: 5,
-                                        justifyContent: 'center',
-                                        alignItems:'center',
-                                        margin:'auto'
-                                    }}
-                                />
-                                <CardBody style={{ flex: 4, flexDirection: 'column', justifyContent:'center',alignItems:'center', margin:'0 auto'}}>
-                                    <CardText style={{ fontSize: 10, flex: 1 }}>
-                                        {item.place}
-                                    </CardText>
-                                    <CardText style={{ fontSize: 10, flex: 1 }}>
-                                        {'11 tour'}
-                                    </CardText>
-                                </CardBody>
-                            </Card>
-              );
-            })}
-          </Card>
+          {this.renderResult(filterdList)}
         </form>
 
       </div>
