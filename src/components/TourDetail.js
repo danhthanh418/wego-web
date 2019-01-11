@@ -53,23 +53,14 @@ class TourDetail extends Component {
     const { term } = this.state;
     return (
       <div className="container">
-        {/* <section className="content-header">
-          <ol className="breadcrumb">
-            <li>
-              <p>Trang chủ</p>
-            </li>
-            <li>
-              <p>Singapore</p>
-            </li>
-            <li>
-              <p>
-                Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)
-              </p>
-            </li>
-          </ol>
-        </section> */}
+        <div className="top-header py-3">
+          <span>
+            <i className="fa fa-home" />{" "}
+            {`Trang chủ / Singapore / Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)`}
+          </span>
+        </div>
 
-        <h1 className="pageTitle vcolor-primary m-3 hidden-xs">
+        <h1 className="pageTitle vcolor-primary my-0  p-3 hidden-xs ">
           <b className="h1">
             Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)
           </b>
@@ -623,7 +614,7 @@ class TourDetail extends Component {
                       <div className="col-4">KHỞI HÀNH: </div>
                       <div className="col-8">
                         <div className="form-control">
-                          <i className="fa fa-calendar icon-calendar"></i>
+                          <i className="fa fa-calendar fa-lg icon-calendar align-middle" style={{position: 'absolute', right: '28px'}}></i>
                         </div>
                       </div>
                     </div>
@@ -667,10 +658,9 @@ class TourDetail extends Component {
             </ul>
           </div>
         </div>
-        <div style={{ marginTop: '20px' }}>
-          <RelatedTour items={TourData} term={term} />
-        </div>
+        {/* <RelatedTour items={TourData} term={term} /> */}
       </div>
+          
     );
   }
 }

@@ -1,32 +1,45 @@
-import React, { Component } from 'react'
-import TourData from '../data/data.json'
-import CustomDropDownList from './CustomDropDownList'
-export default class ResultList extends Component {
-  render() {
-    return (
-     <div className="" style={{backgroundColor:'#fff', position:'absolute', top:'80%',}}>
-            <i
-              className="fa fa-map-marker mr-2 clearfix"
-              data-toggle="tooltip"
-              title=""
-              style={{left: 0}}
-            />
-            {'ĐỊA ĐIỂM HOT'}
-            {' '}
-            {' '}
-            <div className="" style={{display: 'flex', flexWrap: 'wrap'}}>
-              {TourData.map (tour => {
-                return (
-                  <CustomDropDownList
-                    key={tour.img}
-                    src={tour.img}
-                    tourCount={'10'}
-                    tourPlace={'Campuchia'}
-                  />
-                );
-              })}
+import React, { Component } from 'react';
+import NumberFormat from 'react-number-format'
+class ResultList extends Component {
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+         
+      }
+    }
+    
+    onHandleRemove = (tourID)=>{
+        
+    }
+    render() {
+        return (
+            <div className="recentCard wrapper">
+                <div className="card">
+                    <div className="card-item row">
+                        <div className="col-lg-4 col-sm-2">
+                            <img src="http://placehold.it/120x120" alt="" className="img-fluid"></img>
+                        </div>
+                        <div className="col-lg-7 col-sm-9">
+                            <div className="row row-top">
+                                <div className="card-name">
+                                    {this.props.tourTitle}
+                                </div>
+                            </div>
+                            <div className="row row-bottom">
+                                <div className="card-price text-right">
+                                    <NumberFormat value={this.props.tourPrice} displayType={'text'} thousandSeparator={true} renderText={value => <p className="text-right">
+                                        {value}
+                                    </p>} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-    )
-  }
+        );
+    }
 }
+
+export default ResultList;

@@ -1,12 +1,14 @@
-import React, {Component} from 'react';
-import {Card, CardText} from 'reactstrap';
+import React, { Component } from "react";
+import { Card, CardText } from "reactstrap";
+import ResultList from "./TimKiem/ResultList";
+
 class SearchDetail extends Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
 
     this.state = {
       chkFilter: [],
-      sltSort: 0,
+      sltSort: 0
     };
   }
 
@@ -15,25 +17,22 @@ class SearchDetail extends Component {
     const name = target.name;
     const value = target.value;
 
-    this.setState ({
-      [name]: value,
+    this.setState({
+      [name]: value
     });
-
-
   };
 
-  onSubmit = (event)=>{
-      event.preventDefault();
-  }
-  render () {
-    const {tu_khoa} = this.props.match.params;
-      console.log(this.state)
+  onSubmit = event => {
+    event.preventDefault();
+  };
+  render() {
+    const { tu_khoa } = this.props.match.params;
+    console.log(this.state);
     return (
       <div className="container">
         <div className="top-header py-3">
           <span>
-            <i className="fa fa-home" />
-            {' '}
+            <i className="fa fa-home" />{" "}
             {`Trang chủ / Kết quả tìm kiếm cho "${tu_khoa}"`}
           </span>
         </div>
@@ -45,7 +44,7 @@ class SearchDetail extends Component {
                 <div className="card-header font-weight-bold">Tìm tour</div>
                 <div className="card-body">
                   <div className="desc-to-search">
-                    <p className="font-weight-bold">Bạn muốn đến   :</p>
+                    <p className="font-weight-bold">Bạn muốn đến :</p>
                   </div>
                   <div className="search-area">
                     <form className="card-body row no-gutters pt-0">
@@ -72,9 +71,9 @@ class SearchDetail extends Component {
             {/* Hết bộ lọc 1 */}
             <div className="card-filter mt-2 mb-2">
               <div className="card">
-                <div className="card-header font-weight-bold">Lọc tour</div>
+                <div className="card-header font-weight-bold">Tour</div>
                 <div className="card-body">
-                  <form className="form" onSubmit = {this.onSubmit}>
+                  <form className="form" onSubmit={this.onSubmit}>
                     <div className="form-check">
                       <label className="form-check-label">
                         <input
@@ -84,7 +83,7 @@ class SearchDetail extends Component {
                           id=""
                           onChange={this.onChange}
                         />
-                        Tour trong ngày
+                        Tour trong nước
                       </label>
                     </div>
                     <div className="form-check">
@@ -96,7 +95,41 @@ class SearchDetail extends Component {
                           id=""
                           onChange={this.onChange}
                         />
-                        Tour nội địa
+                        Tour nước ngoài
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-filter mt-2 mb-2">
+              <div className="card">
+                <div className="card-header font-weight-bold">Thời gian</div>
+                <div className="card-body">
+                  <form className="form" onSubmit={this.onSubmit}>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="trongngay"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        1 Ngày - 1 Đêm
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="noidia"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        2 Ngày - 1 Đêm
                       </label>
                     </div>
                     <div className="form-check">
@@ -108,7 +141,7 @@ class SearchDetail extends Component {
                           id=""
                           onChange={this.onChange}
                         />
-                        Tour nước ngoài
+                        2 Ngày - 2 Đêm
                       </label>
                     </div>
                     <div className="form-check">
@@ -120,7 +153,7 @@ class SearchDetail extends Component {
                           id=""
                           onChange={this.onChange}
                         />
-                        Du lịch sông nước
+                        3 Ngày - 2 Đêm
                       </label>
                     </div>
                     <div className="form-check">
@@ -132,15 +165,153 @@ class SearchDetail extends Component {
                           id=""
                           onChange={this.onChange}
                         />
-                        Trọn gói
+                        4 Ngày - 3 Đêm
                       </label>
                     </div>
-                    <button type='submit' className='btn btn-primary btn-block'>Lọc</button>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="trongoi"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        Khác
+                      </label>
+                    </div>
                   </form>
                 </div>
               </div>
             </div>
 
+            <div className="card-filter mt-2 mb-2">
+              <div className="card">
+                <div className="card-header font-weight-bold">Loại Tour</div>
+                <div className="card-body">
+                  <form className="form" onSubmit={this.onSubmit}>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="trongngay"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        Trọn gói
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="noidia"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        Tour Land
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="nuocngoai"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        Free & Easy
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="songnuoc"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        Xe đưa đón
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="trongoi"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                       Daily Tour
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-filter mt-2 mb-2">
+              <div className="card">
+                <div className="card-header font-weight-bold">Tour theo chủ đề</div>
+                <div className="card-body">
+                  <form className="form" onSubmit={this.onSubmit}>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="trongngay"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        Giảm giá
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="noidia"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        Tour nội địa hot
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="nuocngoai"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        Tour nước ngoài hot
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          name="songnuoc"
+                          id=""
+                          onChange={this.onChange}
+                        />
+                        Tour du lịch sông nước miền tây
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right side */}
@@ -150,15 +321,21 @@ class SearchDetail extends Component {
               <div className="card col-md-12  border border-top-3 bg-light">
                 <div className="card-body sort-list">
                   <div className="row">
-                    <div className="col">Sắp xếp theo</div>
-                    <div className="col" name='dexuat'>Đề xuất</div>
-                    <div className="col" name='gia'>Gía</div>
-                    <div className="col" name='thoiluong'>Thời lượng tour</div>
+                    <div className="col d-none d-md-flex d-lg-fl">Sắp xếp theo</div>
+                    <div className="col" name="dexuat">
+                      Đề xuất
+                    </div>
+                    <div className="col" name="gia">
+                      Giá
+                    </div>
+                    <div className="col" name="thoiluong">
+                      Thời lượng tour
+                    </div>
                   </div>
                 </div>
               </div>
-              <Card className='p-2 my-2'>
-                <CardText>Kết quả tìm kiếm</CardText>
+              <Card className="p-2 my-2">
+                <ResultList></ResultList>
               </Card>
             </div>
           </div>

@@ -23,8 +23,8 @@ class TourContainer extends Component {
   render () {
     const {items} = this.props;
     return (
-      <div className="tourContainer">
-        <div className="container">
+      <div className="tourContainer " style={{paddingLeft:-15}}>
+        <div className="container px-0">
           {/* {console.log (this.groupedByCategory (items))} */}
           {this.groupedByCategory (items).map ((cat, index) => {
             if (cat.category==='deal')
