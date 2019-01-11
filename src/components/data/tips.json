@@ -2,14 +2,14 @@
     {
         "id": "M001",
         "name": "Kinh nghiệm xin visa Úc online",
-        "img": "http://toidi.net/wp-content/uploads/2018/12/du-lich-hoa-anh-dao-nhat-ban-1.jpg",
+        "img": "http://toidi.net/wp-content/uploads/2018/12/48412331_1859433137489388_3813038696572125184_n.jpg",
         "time": "20/12/2018",
         "trans": [
             1,
             2
         ],
         "doc": "Hiện tại Úc cho phép người Việt Nam đăng ký xin visa online với thủ tục rất đơn giản.",
-        "category": "Mẹo"
+        "category": ""
     },
     {
         "id": "M002",
@@ -21,7 +21,7 @@
             1
         ],
         "doc": "Chương trình đặc sắc 5 ngày ngắm Hoa Anh Đào vùng Kansai bao gồm Osaka – Kyoto – Himeji – Kobe là một chương trình mới của Wego.",
-        "category": "Mẹo"
+        "category": ""
     },
     {
         "id": "M003",
@@ -34,7 +34,7 @@
             2
         ],
         "doc": "Mùa hoa anh đào là một trong những thời điểm đẹp bên cạnh mùa thu để du lịch Hàn Quốc.",
-        "category": "Mẹo"
+        "category": ""
     },
     {
         "id": "M004",
@@ -47,6 +47,6 @@
             3
         ],
         "doc": "Delhi, thủ đô của đất nước Ấn Độ, một thành phố vừa mang vẻ đẹp hiện đại, tươi mới vừa đậm nét hoài cổ và truyền thống. ",
-        "category": "Mẹo"
+        "category": ""
     }
 ]

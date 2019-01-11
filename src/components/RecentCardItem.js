@@ -18,7 +18,7 @@ class RecentCardItem extends Component {
                             <div className="row row-bottom">
                                 <div className="card-price text-right">
                                     <NumberFormat value={this.props.tourPrice} displayType={'text'} thousandSeparator={true} renderText={value => <p className="text-right">
-                                        {value} VND
+                                        {value} {this.props.tourCurency}
                                     </p>} />
                                 </div>
                             </div>

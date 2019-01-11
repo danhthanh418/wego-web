@@ -95,6 +95,7 @@ class Tour extends Component {
                             tourCategory={tour.category}
                             onHandleClick={tourID =>
                               this.onHandleClick (tourID)}
+                            tourCurency='VND'
                           />
                         </div>
                       );
