@@ -21,6 +21,7 @@ class SearchDetail extends Component {
   };
   render () {
     const {tu_khoa} = this.props.match.params;
+      console.log(this.state)
     return (
       <div className="container">
         <div className="top-header py-3">
@@ -73,7 +74,7 @@ class SearchDetail extends Component {
                         <input
                           type="checkbox"
                           className="form-check-input"
-                          name=""
+                          name="trongngay"
                           id=""
                           onChange={this.onChange}
                         />
@@ -85,7 +86,7 @@ class SearchDetail extends Component {
                         <input
                           type="checkbox"
                           className="form-check-input"
-                          name=""
+                          name="noidia"
                           id=""
                           onChange={this.onChange}
                         />
@@ -97,7 +98,7 @@ class SearchDetail extends Component {
                         <input
                           type="checkbox"
                           className="form-check-input"
-                          name=""
+                          name="nuocngoai"
                           id=""
                           onChange={this.onChange}
                         />
@@ -109,7 +110,7 @@ class SearchDetail extends Component {
                         <input
                           type="checkbox"
                           className="form-check-input"
-                          name=""
+                          name="songnuoc"
                           id=""
                           onChange={this.onChange}
                         />
@@ -121,7 +122,7 @@ class SearchDetail extends Component {
                         <input
                           type="checkbox"
                           className="form-check-input"
-                          name=""
+                          name="trongoi"
                           id=""
                           onChange={this.onChange}
                         />
@@ -143,9 +144,9 @@ class SearchDetail extends Component {
                 <div className="card-body sort-list">
                   <div className="row">
                     <div className="col">Sắp xếp theo</div>
-                    <div className="col">Đề xuất</div>
-                    <div className="col">Gía</div>
-                    <div className="col">Thời lượng tour</div>
+                    <div className="col" name='dexuat'>Đề xuất</div>
+                    <div className="col" name='gia'>Gía</div>
+                    <div className="col" name='thoiluong'>Thời lượng tour</div>
                   </div>
                 </div>
               </div>
