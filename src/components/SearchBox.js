@@ -23,10 +23,9 @@ class SearchBox extends Component {
       return <Card
         style={{
           width: '81%',
-          padding: 5,
+          padding: 0,
           position: 'absolute',
-          top: 81,
-          marginTop: 10,
+          top: '81',
         }}
         className='d-flex'
       >
