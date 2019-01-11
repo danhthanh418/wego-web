@@ -78,13 +78,9 @@ class SearchBox extends Component {
         item.name.toLowerCase().indexOf(this.state.term.toLowerCase()) !== -1
       );
     });
-    return (
-      <div
-        className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12"
-        style={{zIndex: 3}}
-      >
+    return <div className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12" style={{zIndex: 3}}>
         <form className="card-sm bg-dark2 p-2" onSubmit={this.onSubmit}>
-          <div className="no-padding tourHomeIntro">
+          <div className="no-padding tourHomeIntro d-none d-lg-flex">
             <div className="title">Đặt tours du lịch!</div>
             <div className="desc">
               Hơn 300 tours du lịch ở Việt Nam và Quốc tế
@@ -93,39 +89,28 @@ class SearchBox extends Component {
           <div className="card-body row no-gutters p-1">
             {/*end of col*/}
             <div className="col">
-              <input
-                onChange={this.onChange}
-                className="form-control form-control form-control-borderless"
-                type="search"
-                placeholder="Tìm kiếm tour hoặc địa điểm"
-                name="term"
-                id="term"
-                value={this.state.term}
-                onFocus = {()=>this.setState({
-                  isFocus:true
-                })}
-                onBlur= {()=>{
-                  this.setState({
-                    isFocus:false
-                  })
-                }}
-              />
+              <input onChange={this.onChange} className="form-control form-control form-control-borderless" type="search" placeholder="Tìm kiếm tour hoặc địa điểm" name="term" id="term" value={this.state.term} onFocus={() => this.setState(
+                    {
+                      isFocus: true,
+                    }
+                  )} onBlur={() => {
+                  this.setState({isFocus: false});
+                }} />
             </div>
             {/*end of col*/}
             <div className="col-auto">
-            <NavLink to={`tim-kiem/${this.state.term}`}>
+              <NavLink to={`tim-kiem/${this.state.term}`}>
                 <button className="btn btn btn-primary" type="submit" onClick={this.toSearchDeatail}>
-                  <i className="fa fa-search mr-2" aria-hidden="true" />Tìm
-              </button>
-            </NavLink>
+                  <i className="fa fa-search mr-2" aria-hidden="true" />
+                  Tìm
+                </button>
+              </NavLink>
             </div>
             {/*end of col*/}
           </div>
           {this.renderResult(filterdList)}
         </form>
-
-      </div>
-    );
+      </div>;
   }
 }
 

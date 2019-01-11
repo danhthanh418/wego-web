@@ -8,7 +8,7 @@ class Footer extends Component {
         return (
             <footer className="spacer-y-3 bg-light padding-10">
                 <div className="container">
-                    <div className="row">
+                    <div className="d-none d-md-flex d-lg-flex">
                         <div className="col">
                             <h5 className="text-blue">Về WeGo</h5>
                             <ul className="list-unstyled">

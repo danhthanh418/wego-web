@@ -603,9 +603,10 @@ img {
     position: absolute;
     font-weight: bold;
     top: 5%;
-    left: 20%;
+    left: 10%;
     padding-top: 10%;
-    width: 606.500px
+    flex:1;
+    width: 80%
 }
 
 /* Custom date time picker  */
