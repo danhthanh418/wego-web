@@ -219,15 +219,16 @@ class TipsContainer extends Component {
                 </div>
                 <div className='row'>
                         <div className='col'>
-                        <Badge color="primary">Book khách sạn giá rẻ ở đâu?</Badge>
-                          <Badge color="primary" className='px-3'>Du lịch</Badge>
-                          <Badge color="primary" className='px-3'>Book khách sạn trực tuyến</Badge>
-                          <Badge color="primary" className='px-3'>Du lịch Nhật Bản </Badge>
-                          <Badge color="primary" className='px-3'>Du lịch Hàn Quốc</Badge>
-                          <Badge color="primary" className='px-3'>Du lịch Australia</Badge>
-                          <Badge color="primary" className='px-3'>Du lịch đảo Phú Quốc</Badge>
-                          <Badge color="primary" className='px-3'>Du lịch thành phố Hồ Chí Minh</Badge>
-                          <Badge color="primary" className='px-3'>Book phòng khách sạn online</Badge>
+                        <span class="badge badge-pill badge-primary">Khách sạn Hà Nội giá rẻ</span>
+                        <span class="badge badge-pill badge-primary">Book khách sạn giá rẻ ở đâu?</span>
+                        <span class="badge badge-pill badge-primary">Du lịch</span>
+                        <span class="badge badge-pill badge-primary">Book khách sạn trực tuyến</span>
+                        <span class="badge badge-pill badge-primary">Du lịch Nhật Bản</span>
+                        <span class="badge badge-pill badge-primary">Du lịch Hàn Quốc</span>
+                        <span class="badge badge-pill badge-primary">Du lịch Australia</span>
+                        <span class="badge badge-pill badge-primary">Du lịch đảo Phú Quốc</span>
+                        <span class="badge badge-pill badge-primary">Du lịch thành phố Hồ Chí Minh</span>
+                        <span class="badge badge-pill badge-primary">Book phòng khách sạn online</span>
                         </div>
                 </div>
               </Card>
