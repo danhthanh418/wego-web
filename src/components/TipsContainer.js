@@ -58,6 +58,7 @@ class TipsContainer extends Component {
     return (
       <div className="tourContainer">
         <div className="container">
+          <div style={{height: '10px', backgroundColor:'transparent'}}></div>
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-9 col-lg-9">
               {this.groupedByCategory(items).map((cat, index) => {
@@ -231,6 +232,7 @@ class TipsContainer extends Component {
                         </div>
                 </div>
               </Card>
+              <div style={{height: '10px', backgroundColor:'transparent'}}></div>
             </div>
           </div>
         </div>

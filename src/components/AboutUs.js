@@ -52,7 +52,7 @@ class AboutUs extends Component {
             </nav>
           </Card>
           <Card className="col-md-8 m-2">
-            <h1 className="title_aboutUs">Giới thiệu về chúng tôi </h1>
+            <h1 className="title_aboutUs py-2">Giới thiệu về chúng tôi </h1>
             <p className="aboutUs_1">
               Chúng tôi với đội ngũ nhân viên của thế hệ 8X, 9X trẻ nhiêt
               huyết, năng động, sáng tạo và ham học hỏi có kinh nghiệm trong

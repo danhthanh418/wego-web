@@ -1,45 +1,119 @@
-import React, { Component } from 'react';
-import NumberFormat from 'react-number-format'
+import React, { Component } from "react";
+import NavLink from "react-router-dom/NavLink";
+import NumberFormat from "react-number-format";
 class ResultList extends Component {
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         
-      }
-    }
-    
-    onHandleRemove = (tourID)=>{
-        
-    }
-    render() {
-        return (
-            <div className="recentCard wrapper">
-                <div className="card">
-                    <div className="card-item row">
-                        <div className="col-lg-4 col-sm-2">
-                            <img src="http://placehold.it/120x120" alt="" className="img-fluid"></img>
-                        </div>
-                        <div className="col-lg-7 col-sm-9">
-                            <div className="row row-top">
-                                <div className="card-name">
-                                    {this.props.tourTitle}
-                                </div>
-                            </div>
-                            <div className="row row-bottom">
-                                <div className="card-price text-right">
-                                    <NumberFormat value={this.props.tourPrice} displayType={'text'} thousandSeparator={true} renderText={value => <p className="text-right">
-                                        {value}
-                                    </p>} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
+  URLStandardize = str => {
+    // Chuyển hết sang chữ thường
+    str = str.toLowerCase();
+
+    // xóa dấu
+    str = str.replace(/(à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ)/g, "a");
+    str = str.replace(/(è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ)/g, "e");
+    str = str.replace(/(ì|í|ị|ỉ|ĩ)/g, "i");
+    str = str.replace(/(ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ)/g, "o");
+    str = str.replace(/(ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ)/g, "u");
+    str = str.replace(/(ỳ|ý|ỵ|ỷ|ỹ)/g, "y");
+    str = str.replace(/(đ)/g, "d");
+
+    // Xóa ký tự đặc biệt
+    str = str.replace(/([^0-9a-z-\s])/g, "");
+
+    // Xóa khoảng trắng thay bằng ký tự -
+    str = str.replace(/(\s+)/g, "-");
+
+    // xóa phần dự - ở đầu
+    str = str.replace(/^-+/g, "");
+
+    // xóa phần dư - ở cuối
+    str = str.replace(/-+$/g, "");
+
+    // return
+    return str;
+  };
+  hanldeTourDetail = () => {
+    return <NavLink to={"/chi-tiet"} />;
+  };
+  render() {
+    // const {tourPrice} = this.props;
+    return (
+      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div className="card col">
+          <div className="cardItemImage col-4 px-0 py-2">
+            <NavLink to={"/chi-tiet"}>
+                <img className="img-fluid" src={this.props.tourImg} alt="" />
+            </NavLink>
+          </div>
+          <div className="cardItemContent no-padding col-6">
+            <div className="cardItemTourNameDiv">
+              <NavLink to={"/chi-tiet"}>
+                <span className="cardItemTourName align-items-stretch">
+                  {this.props.tourTitle}
+                </span>
+              </NavLink>
             </div>
-        );
-    }
+            <div className="no-padding cardItemTourDetailDiv">
+              <div className="v-margin-bottom-10">
+                <div className="">
+                  <div className="">
+                    <span>
+                      <i
+                        className="fa fa-clock-o"
+                        data-toggle="tooltip"
+                        title=""
+                        data-original-title="Thời lượng tour"
+                      />{" "}
+                      {this.props.tourTime}{" "}
+                    </span>
+                  </div>
+                  <div className="text-right transportDiv">
+                    <i
+                      className="fa fa-plane mr-2"
+                      data-toggle="tooltip"
+                      title=""
+                      data-original-title="Di chuyển bằng máy bay"
+                    />
+                    <i
+                      className="fa fa-bus mr-2"
+                      data-toggle="tooltip"
+                      title=""
+                      data-original-title="Di chuyển bằng Ô tô"
+                    />
+                    <i
+                      className="fa fa-ship"
+                      data-toggle="tooltip"
+                      title=""
+                      data-original-title="Di chuyển bằng Tàu thủy"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="v-margin-bottom-5 cardItemDepartDiv">
+                <span>
+                  <i className="fa fa-calendar mr-2" />
+                  {this.props.tourCalendar}
+                </span>
+              </div>
+              <div className="ardItemPrice">
+                <NumberFormat
+                  value={this.props.tourPrice}
+                  displayType={"text"}
+                  thousandSeparator={true}
+                  renderText={value => (
+                    <div className="price vcolor-info">{value} VND</div>
+                  )}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default ResultList;

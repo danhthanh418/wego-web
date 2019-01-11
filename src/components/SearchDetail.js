@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardText } from "reactstrap";
 import ResultList from "./TimKiem/ResultList";
+import TourData from './data/data.json';
 
 class SearchDetail extends Component {
   constructor(props) {
@@ -8,7 +9,10 @@ class SearchDetail extends Component {
 
     this.state = {
       chkFilter: [],
-      sltSort: 0
+      sltSort: 0,
+      items: TourData,
+      term: '',
+      modal: false,
     };
   }
 
@@ -25,9 +29,11 @@ class SearchDetail extends Component {
   onSubmit = event => {
     event.preventDefault();
   };
+
   render() {
+    const {term, items} = this.state;
     const { tu_khoa } = this.props.match.params;
-    console.log(this.state);
+    //console.log(this.state);
     return (
       <div className="container">
         <div className="top-header py-3">
@@ -321,7 +327,7 @@ class SearchDetail extends Component {
               <div className="card col-md-12  border border-top-3 bg-light">
                 <div className="card-body sort-list">
                   <div className="row">
-                    <div className="col d-none d-md-flex d-lg-fl">Sắp xếp theo</div>
+                    <div className="col d-none d-md-flex d-lg-fl">Sắp xếp theo:</div>
                     <div className="col" name="dexuat">
                       Đề xuất
                     </div>
@@ -334,8 +340,27 @@ class SearchDetail extends Component {
                   </div>
                 </div>
               </div>
-              <Card className="p-2 my-2">
-                <ResultList></ResultList>
+              <Card className="py-2 my-2">
+              {TourData.map ((tour, index) => {
+                      return (
+                        <div key={index}>
+                          <ResultList
+                            key={index}
+                            tourID={tour.id}
+                            tourTitle={tour.name}
+                            tourImg={tour.img}
+                            tourTime={tour.time}
+                            tourCalendar={tour.doc}
+                            tourPrice={tour.price}
+                            tourCategory={tour.category}
+                            onHandleClick={tourID =>
+                              this.onHandleClick (tourID)}
+                            tourCurency='VND'
+                            hienThi={true}
+                          />
+                        </div>
+                      );
+                    })}
               </Card>
             </div>
           </div>
