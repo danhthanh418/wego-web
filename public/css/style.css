@@ -603,10 +603,15 @@ img {
     position: absolute;
     font-weight: bold;
     top: 5%;
-    left: 10%;
     padding-top: 10%;
     flex:1;
-    width: 80%
+    width: 80%;
+    max-width: 65vw;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    margin: auto;
+    z-index: 999;
 }
 
 /* Custom date time picker  */

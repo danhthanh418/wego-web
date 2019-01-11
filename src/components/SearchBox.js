@@ -80,7 +80,7 @@ class SearchBox extends Component {
     });
     return <div className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12" style={{zIndex: 3}}>
         <form className="card-sm bg-dark2 p-2" onSubmit={this.onSubmit}>
-          <div className="no-padding tourHomeIntro d-none d-lg-flex">
+          <div className="no-padding tourHomeIntro d-none d-md-block d-lg-block">
             <div className="title">Đặt tours du lịch!</div>
             <div className="desc">
               Hơn 300 tours du lịch ở Việt Nam và Quốc tế
