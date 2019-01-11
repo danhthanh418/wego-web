@@ -1,6 +1,26 @@
 import React, { Component } from 'react';
 import NumberFormat from 'react-number-format'
 class RecentCardItem extends Component {
+
+    displayRemoval = (cons)=>{
+        if(cons){
+            return (
+                <div className="card-removal">
+                <button
+                    type="button"
+                    className="btn btn-box-tool removeTourRecentItem"
+                    style={{ zIndex: 3,padding:0}}
+            >
+                    <i className="fa fa-times" />
+                </button>
+                
+            </div>
+            )
+        }
+        else{
+            return ''
+        }
+    }
     render() {
         return (
             <div className="recentCard wrapper">
@@ -23,16 +43,7 @@ class RecentCardItem extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="card-removal">
-                            <button
-                                type="button"
-                                className="btn btn-box-tool removeTourRecentItem"
-                                style={{ zIndex: 3,padding:0}}
-                        >
-                                <i className="fa fa-times" />
-                            </button>
-                            
-                        </div>
+                            {this.displayRemoval(this.props.hienThi)}
                     </div>
                 </div>
 

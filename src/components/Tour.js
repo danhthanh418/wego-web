@@ -96,6 +96,7 @@ class Tour extends Component {
                             onHandleClick={tourID =>
                               this.onHandleClick (tourID)}
                             tourCurency='VND'
+                            hienThi={true}
                           />
                         </div>
                       );
