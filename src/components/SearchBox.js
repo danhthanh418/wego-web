@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import TourData from './data/data.json';
 import {Card, CardImg, CardBody, CardText, CardTitle} from 'reactstrap';
+
+import NavLink from 'react-router-dom/NavLink';
 class SearchBox extends Component {
   constructor (props) {
     super (props);
@@ -67,6 +69,9 @@ class SearchBox extends Component {
       console.log(this.state.length)
     }
   }
+  onSubmit=(event)=>{
+    event.preventDefault();
+  }
   render () {
     let filterdList = TourData.filter((item, index) => {
       return (
@@ -78,7 +83,7 @@ class SearchBox extends Component {
         className="search-box col-xs-12 col-sm-12 col-md-12 col-lg-12"
         style={{zIndex: 3}}
       >
-        <form className="card-sm bg-dark2 p-2">
+        <form className="card-sm bg-dark2 p-2" onSubmit={this.onSubmit}>
           <div className="no-padding tourHomeIntro">
             <div className="title">Đặt tours du lịch!</div>
             <div className="desc">
@@ -108,9 +113,11 @@ class SearchBox extends Component {
             </div>
             {/*end of col*/}
             <div className="col-auto">
-              <button className="btn btn btn-primary" type="submit">
-                <i className="fa fa-search mr-2" aria-hidden="true" />Tìm
+            <NavLink to={`tim-kiem/${this.state.term}`}>
+                <button className="btn btn btn-primary" type="submit" onClick={this.toSearchDeatail}>
+                  <i className="fa fa-search mr-2" aria-hidden="true" />Tìm
               </button>
+            </NavLink>
             </div>
             {/*end of col*/}
           </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import bct from './images/bct.png';
 import FacebookComponents from './utils/FacebookComponents';
+import NavLink from 'react-router-dom/NavLink';
 
 class Footer extends Component {
     render() {
@@ -12,10 +13,10 @@ class Footer extends Component {
                             <h5 className="text-blue">Về WeGo</h5>
                             <ul className="list-unstyled">
                                 <li className="py-0 py-md-1">
-                                    <a href="/" className="text-blue">Chúng tôi</a>
+                                    <NavLink to="/gioi-thieu" className="text-blue">Chúng tôi</NavLink>
                                 </li>
                                 <li className="py-0 py-md-1">
-                                    <a href="/" className="text-blue">Cẩm nang du lịch</a>
+                                    <NavLink to="/cam-nang" className="text-blue">Cẩm nang du lịch</NavLink>
                                 </li>
                             </ul>
                         </div>

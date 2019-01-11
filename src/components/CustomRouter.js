@@ -29,7 +29,7 @@ class CustomRouter extends Component {
                     <Route exact path="/giai-dap" component={Answer}></Route>
                     <Route exact path="/ho-tro" component={Support}></Route>
                     <Route exact path="/dang-nhap" component={Login}></Route>
-                    <Route exact path="/tim-kiem" component={SearchDetail}></Route>
+                    <Route path="/tim-kiem/:tu_khoa" component={SearchDetail}></Route>
                     <Route component={PageNotFound} />;
                    </Switch>
                    
