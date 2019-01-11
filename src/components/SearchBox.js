@@ -18,17 +18,15 @@ class SearchBox extends Component {
       term: event.target.value,
     });
   };
-  renderResult = (filterdList)=>{
-    if(this.state.isFocus){
-     return <Card
+  renderResult = (filterdList) => {
+    if (this.state.isFocus) {
+      return <Card
         style={{
+          width: '81%',
           padding: 5,
           position: 'absolute',
           top: 81,
           marginTop: 10,
-          flex:1,
-          flexWrap:'wrap',
-          width:'85%'
         }}
         className='d-flex'
       >
@@ -40,14 +38,14 @@ class SearchBox extends Component {
                 display: 'flex',
                 flexWrap: 'wrap',
                 flexDirection: 'row',
-                flex:1
               }}
-              className='d-flex'
             >
               <CardImg
                 className="img-fluid"
                 src={item.img}
                 style={{
+                  width: '10%',
+                  height: '10%',
                   flex: 1,
                   padding: 5,
                   justifyContent: 'center',
@@ -55,7 +53,7 @@ class SearchBox extends Component {
                   margin: 'auto'
                 }}
               />
-              <CardBody style={{ flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '0 auto' }}>
+              <CardBody style={{ flex: 4, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '0 auto' }}>
                 <CardText style={{ fontSize: 10, flex: 1 }}>
                   {item.place}
                 </CardText>
@@ -67,7 +65,7 @@ class SearchBox extends Component {
           );
         })}
       </Card>
-    }else if(this.state.term.length>0){
+    } else if (this.state.term.length > 0) {
       console.log(this.state.length)
     }
   }

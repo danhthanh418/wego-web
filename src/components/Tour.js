@@ -35,7 +35,7 @@ class Tour extends Component {
           <div className="search-float">
             <SearchBox onChange={this.onChange} term={term} />
           </div>
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 whyWeGo">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 whyWeGo d-none d-md-flex d-lg-flex">
             <div className="container">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding whyWeGoContainer v-margin-top-15">
                 <div className="row">
