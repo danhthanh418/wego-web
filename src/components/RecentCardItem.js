@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import NumberFormat from 'react-number-format'
 class RecentCardItem extends Component {
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+         
+      }
+    }
+    
+    onHandleRemove = (tourID)=>{
+        
+    }
     render() {
         return (
             <div className="recentCard wrapper">
