@@ -19,7 +19,7 @@ class SearchDetail extends Component {
       [name]: value,
     });
 
-    
+
   };
 
   onSubmit = (event)=>{
@@ -135,7 +135,7 @@ class SearchDetail extends Component {
                         Trọn gói
                       </label>
                     </div>
-                    <button type='submit'></button>
+                    <button type='submit' className='btn btn-primary btn-block'>Lọc</button>
                   </form>
                 </div>
               </div>
