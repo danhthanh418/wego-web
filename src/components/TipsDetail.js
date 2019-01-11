@@ -59,16 +59,10 @@ class TipsDetail extends Component {
       <div className="tourContainer">
         <div className="container">
           <div className="row">
-            <div className="col-9" style={{ backgroundColor: "#fff" }}>
-              {/* <div className="top-header py-3">
-                <span>
-                  <i className="fa fa-home" />{" "}
-                  {`Trang chủ / Singapore / Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)`}
-                </span>
-              </div> */}
+            <div className="col-xs-12 col-sm-12 col-md-9 col-lg-9 card">
               <div className="mda-content mda-news-d clearfix padding_left_10">
                 <div className="mda-left left_tin" style={{ width: "100%" }}>
-                  <div className="mda-news-top">
+                  <div className="mda-news-top py-2">
                     <h1>Ngắm tuyết ở đâu cho ngầu?</h1>{" "}
                   </div>
                   <div className="mda-info-share clearfix">
@@ -230,7 +224,7 @@ class TipsDetail extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-3 py-3">
+            <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
               <Card style={{}}>
                 <div
                   className="p-2"
@@ -278,7 +272,7 @@ class TipsDetail extends Component {
                       <div className="row p-4">
                         {TourData.map((tour, index) => {
                           return (
-                            <div className="" key={index}>
+                            <div className="pb-1" key={index}>
                               <RecentCardItem
                                 key={index}
                                 tourID={tour.id}
@@ -299,7 +293,7 @@ class TipsDetail extends Component {
                       <div className="row p-4">
                         {TourData.map((tour, index) => {
                           return (
-                            <div className="" key={index}>
+                            <div className="pb-1" key={index}>
                               <RecentCardItem
                                 key={index}
                                 tourID={tour.id}
@@ -326,7 +320,7 @@ class TipsDetail extends Component {
                 >
                   BẠN QUAN TÂM CHỦ ĐỀ GÌ?
                 </div>
-                <div className="row">
+                <div className="row p-2">
                   <div className="col">
                     <span class="badge badge-pill badge-primary">
                       Khách sạn Hà Nội giá rẻ
@@ -361,6 +355,7 @@ class TipsDetail extends Component {
               </Card>
             </div>
           </div>
+          <div style={{height: '10px', backgroundColor: 'transparent'}}></div>
         </div>
       </div>
     );

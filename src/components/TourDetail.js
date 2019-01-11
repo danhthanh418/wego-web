@@ -53,36 +53,35 @@ class TourDetail extends Component {
     const { term } = this.state;
     return (
       <div className="container">
-        <div className="top-header py-3">
+        <div className="top-header pt-3">
           <span>
             <i className="fa fa-home" />{" "}
             {`Trang chủ / Singapore / Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)`}
           </span>
         </div>
-
-        <h1 className="pageTitle vcolor-primary my-0  p-3 hidden-xs ">
+        <h1 className="pageTitle vcolor-primary my-0  py-3 hidden-xs ">
           <b className="h1">
             Tour Singapore 6N5D: Singapore - Indonesia - Malaysia (Deal)
           </b>
         </h1>
         <div className="row">
           <div
-            className="col-xs-8 col-sm-8 col-md-8 col-lg-8"
+            className="col-xs-pull-12 col-sm-pull-12 col-md-8 col-lg-8 mainContent"
             style={{ backgroundColor: "#fff" }}
           >
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding tourDetailMainDiv">
               <div
                 className="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding"
               >
-                <p style={{ textAlign: "center" }}>
+                <div style={{ textAlign: "center" }}>
                   <img
                     src="//cdn2.ivivu.com/2018/04/13/17/ivivu-pattaya.jpg"
                     alt=""
-                    width={710}
+                    width={750}
                     height={399}
                     className="img-fluid"
                   />
-                </p>
+                </div>
                 <div className="row tourHeaderInfo belowCover p-0 m-0 ">
                   <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-1 row">
@@ -604,7 +603,7 @@ class TourDetail extends Component {
             <FacebookComponents />
           </div>
 
-          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <div className="col-xs-push-12 col-sm-push-12 col-md-4 col-lg-4 sideBarContent">
             <ul style={{ listStyleType: "none", backgroundColor: "#fff" }}>
               <li style={{ borderBottom: "none" }}>
                 <div className=" card float-box">
@@ -658,7 +657,7 @@ class TourDetail extends Component {
             </ul>
           </div>
         </div>
-        {/* <RelatedTour items={TourData} term={term} /> */}
+        <div style={{height: '10px', backgroundColor:'transparent'}}></div>
       </div>
           
     );

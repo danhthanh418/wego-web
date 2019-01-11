@@ -37,7 +37,7 @@ class SearchDetail extends Component {
           </span>
         </div>
         <div className="row">
-          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 tourListSideBar">
             {/* Bắt đầu bộ lọc */}
             <div className="card-filter mt-2 mb-2">
               <div className="card">
@@ -53,7 +53,7 @@ class SearchDetail extends Component {
                         <input
                           className="form-control form-control form-control-borderless border border-primary"
                           type="search"
-                          placeholder="Tìm kiếm tour hoặc địa điểm"
+                          placeholder=""
                         />
                       </div>
                       {/*end of col*/}
@@ -75,7 +75,7 @@ class SearchDetail extends Component {
                 <div className="card-body">
                   <form className="form" onSubmit={this.onSubmit}>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -87,7 +87,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -109,7 +109,7 @@ class SearchDetail extends Component {
                 <div className="card-body">
                   <form className="form" onSubmit={this.onSubmit}>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -121,7 +121,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -133,7 +133,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -145,7 +145,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -157,7 +157,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -169,7 +169,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -191,7 +191,7 @@ class SearchDetail extends Component {
                 <div className="card-body">
                   <form className="form" onSubmit={this.onSubmit}>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -203,7 +203,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -215,7 +215,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -227,7 +227,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -239,7 +239,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -261,7 +261,7 @@ class SearchDetail extends Component {
                 <div className="card-body">
                   <form className="form" onSubmit={this.onSubmit}>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -273,7 +273,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -285,7 +285,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -297,7 +297,7 @@ class SearchDetail extends Component {
                       </label>
                     </div>
                     <div className="form-check">
-                      <label className="form-check-label">
+                      <label className="form-check-label p-1">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -315,7 +315,7 @@ class SearchDetail extends Component {
           </div>
 
           {/* Right side */}
-          <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+          <div className="col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <div className="result-container">
               <h3 className="text-blue">{`Kết quả tìm kiếm cho "${tu_khoa}"`}</h3>
               <div className="card col-md-12  border border-top-3 bg-light">

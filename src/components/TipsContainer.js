@@ -59,7 +59,7 @@ class TipsContainer extends Component {
       <div className="tourContainer">
         <div className="container">
           <div className="row">
-            <div className="col-9">
+            <div className="col-xs-12 col-sm-12 col-md-9 col-lg-9">
               {this.groupedByCategory(items).map((cat, index) => {
                 return (
                   <div className="tourContainer" key={index}>
@@ -120,7 +120,7 @@ class TipsContainer extends Component {
                 );
               })}
             </div>
-            <div className="col-3 py-3">
+            <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
               <Card style={{}}>
                 <div
                   className="p-2"
@@ -168,7 +168,7 @@ class TipsContainer extends Component {
                       <div className="row p-4">
                         {TourData.map((tour, index) => {
                           return (
-                            <div className="" key={index}>
+                            <div className="pb-1" key={index}>
                               <RecentCardItem
                                 key={index}
                                 tourID={tour.id}
@@ -189,7 +189,7 @@ class TipsContainer extends Component {
                       <div className="row p-4">
                         {TourData.map((tour, index) => {
                           return (
-                            <div className="" key={index}>
+                            <div className="pb-1" key={index}>
                               <RecentCardItem
                                 key={index}
                                 tourID={tour.id}
@@ -216,7 +216,7 @@ class TipsContainer extends Component {
                 >
                   BẠN QUAN TÂM CHỦ ĐỀ GÌ?
                 </div>
-                <div className='row'>
+                <div className='row p-2'>
                         <div className='col'>
                         <span class="badge badge-pill badge-primary">Khách sạn Hà Nội giá rẻ</span>
                         <span class="badge badge-pill badge-primary">Book khách sạn giá rẻ ở đâu?</span>
