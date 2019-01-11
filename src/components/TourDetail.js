@@ -613,7 +613,7 @@ class TourDetail extends Component {
             <FacebookComponents />
           </div>
 
-          <div className="sticky-top col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <ul style={{ listStyleType: "none", backgroundColor: "#fff" }}>
               <li style={{ borderBottom: "none" }}>
                 <div className=" card float-box">
@@ -667,7 +667,7 @@ class TourDetail extends Component {
             </ul>
           </div>
         </div>
-        <div style={{ backgroundColor: '#fff'}}>
+        <div style={{ marginTop: '20px' }}>
           <RelatedTour items={TourData} term={term} />
         </div>
       </div>

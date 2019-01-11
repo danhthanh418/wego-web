@@ -27,13 +27,14 @@ class TourContainer extends Component {
         <div className="container">
           {/* {console.log (this.groupedByCategory (items))} */}
           {this.groupedByCategory (items).map ((cat, index) => {
+            if (cat.category==='deal')
             return (
-              <div className="tourContainer" key={index}>
-                <div className="container">
+              <div className="tourContainer" key={index} style={{backgroundColor: '#fff'}}>
+                <div className="container" style={{backgroundColor: '#fff'}}>
                   <h3 className="localHeadLine hasLine" key={index}>
                     <NavLink to="/chi-tiet">
                       <span className="category text-uppercase font-weight-bold">
-                          {cat.category}
+                          Tour liên quan
                       </span>
                       <span className="readMoreTours hidden-xs">
                         XEM THÊM TOURS

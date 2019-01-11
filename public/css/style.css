@@ -114,12 +114,6 @@ footer.padding-10 {
     text-align: right;
 }
 
-ul li:hover {background: #ecf0f5;}
-
-ul li a:hover{
-    text-decoration: none;
-}
-
 .vcolor-info {
     color: #00c1de;
 }
