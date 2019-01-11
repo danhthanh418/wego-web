@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import bct from './images/bct.png';
-import FacebookComponents from './utils/FacebookComponents';
 import NavLink from 'react-router-dom/NavLink';
 
 class Footer extends Component {
@@ -91,7 +90,7 @@ class Footer extends Component {
                                 >
                                     Like để cập nhật thông tin cẩm nang du lịch
                   </span>
-                                <FacebookComponents></FacebookComponents>
+                        
                             </div>
 
                         </div>
