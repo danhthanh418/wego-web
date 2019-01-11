@@ -48,10 +48,7 @@ class TipsCardItem extends Component {
                   <NavLink to={'/chi-tiet-tips'}>
                     <figure>
                       <img className="img-fluid" src={this.props.tourImg} alt="" />
-                      <figcaption className="pr-2">
-                          <i className="fa fa-map-marker m-2" data-original-title="Địa điểm" style={{color: 'orange'}} />
-                        {this.props.tourPlace}
-                      </figcaption>
+               
                     </figure>
                     <div className="ribbon-wrapper-red">
                       <div className="ribbon-red">
@@ -73,20 +70,14 @@ class TipsCardItem extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-10">
                         <div className="row">
                           <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <span>
-                              <i className="fa fa-clock-o" data-toggle="tooltip" title="" data-original-title="Thời lượng tour" /> {this.props.tourTime}{' '}
-                            </span>
+                           
                           </div>
-                          <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right transportDiv">
-                            <i className="fa fa-plane mr-2" data-toggle="tooltip" title="" data-original-title="Di chuyển bằng máy bay" />
-                            <i className="fa fa-bus mr-2" data-toggle="tooltip" title="" data-original-title="Di chuyển bằng Ô tô" />
-                            <i className="fa fa-ship" data-toggle="tooltip" title="" data-original-title="Di chuyển bằng Tàu thủy" />
-                          </div>
+                        
                         </div>
                       </div>
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
                         <span>
-                          <i className="fa fa-calendar mr-2" />
+                          
                           {this.props.tourCalendar}
                         </span>
                       </div>

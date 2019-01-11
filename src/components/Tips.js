@@ -33,9 +33,9 @@ class Tips extends Component {
         {/* Begin searh */}
         <div className="tourHomeHeader m-0">
           <img src={Banner} alt="" className="img-fluid" />
-          <p className="begin_cam_nang" >
+          {/* <p className="begin_cam_nang" >
           Nơi tổng hợp <b className="color_cam_nang">mẹo và kinh nghiệm </b> giúp du khách có nhiều thông tin  khi tham quan, du lịch trong nước và ngoài nước 
-          </p>
+          </p> */}
         </div>
         
         <TipsContainer items={items} term={term} />

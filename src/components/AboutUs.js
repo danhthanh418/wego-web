@@ -49,7 +49,7 @@ class AboutUs extends Component {
                   </Link>
                 </li>
               </ul>
-            </nav>;
+            </nav>
           </Card>
           <Card className="col-md-8 m-2">
             <h1 className="title_aboutUs">Giới thiệu về chúng tôi </h1>
