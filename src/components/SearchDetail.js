@@ -18,7 +18,13 @@ class SearchDetail extends Component {
     this.setState ({
       [name]: value,
     });
+
+    
   };
+
+  onSubmit = (event)=>{
+      event.preventDefault();
+  }
   render () {
     const {tu_khoa} = this.props.match.params;
       console.log(this.state)
@@ -68,7 +74,7 @@ class SearchDetail extends Component {
               <div className="card">
                 <div className="card-header font-weight-bold">Lọc tour</div>
                 <div className="card-body">
-                  <form className="form">
+                  <form className="form" onSubmit = {this.onSubmit}>
                     <div className="form-check">
                       <label className="form-check-label">
                         <input
@@ -129,6 +135,7 @@ class SearchDetail extends Component {
                         Trọn gói
                       </label>
                     </div>
+                    <button type='submit'></button>
                   </form>
                 </div>
               </div>
