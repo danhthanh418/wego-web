@@ -26,6 +26,7 @@ class SearchBox extends Component {
           padding: 0,
           position: 'absolute',
           top: '81',
+
         }}
         className='d-flex'
       >
@@ -53,10 +54,10 @@ class SearchBox extends Component {
                 }}
               />
               <CardBody style={{ flex: 4, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '0 auto' }}>
-                <CardText style={{ fontSize: 10, flex: 1 }}>
+                <CardText style={{ fontSize: 14, color: '', flex: 1 }}>
                   {item.place}
                 </CardText>
-                <CardText style={{ fontSize: 10, flex: 1 }}>
+                <CardText className="vcolor-primary" style={{ fontSize: 14, flex: 1 }}>
                   {'11 tour'}
                 </CardText>
               </CardBody>
