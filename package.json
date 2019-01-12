@@ -1,6 +1,6 @@
 {
   "name": "wego-web",
-  "version": "0.1.7",
+  "version": "0.1.10",
   "private": true,
   "dependencies": {
     "body-parser": "^1.18.3",

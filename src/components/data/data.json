@@ -42,5 +42,27 @@
         "doc":" KH: Tối thứ 5 hàng tuần. Phụ thu 500.000/khách (Lễ 2/9)",
         "price":2990000,
         "category":"new"
+    },
+    {
+        "id": "TO004",
+        "name":"Tour Quy Nhơn 3N4D: Quy Nhơn - Phú Yên (HD)",
+        "img": "https://res.cloudinary.com/djctfdhrj/image/upload/v1542677897/wego/images/quy-nhon-city-360x225.jpg",
+        "place":"Phú Yên, Quy Nhơn",
+        "time":"3 ngày 4 đêm",
+        "trans":[0,2,3],
+        "doc":" KH: Tối thứ 5 hàng tuần. Phụ thu 500.000/khách (Lễ 2/9)",
+        "price":3990000,
+        "category":"new"
+    },
+    {
+        "id": "TO004",
+        "name":"Tour Quy Nhơn 3N4D: Quy Nhơn - Phú Yên (HD)",
+        "img": "https://res.cloudinary.com/djctfdhrj/image/upload/v1542677897/wego/images/quy-nhon-city-360x225.jpg",
+        "place":"Phú Yên, Quy Nhơn",
+        "time":"3 ngày 4 đêm",
+        "trans":[0,2,3],
+        "doc":" KH: Tối thứ 5 hàng tuần. Phụ thu 500.000/khách (Lễ 2/9)",
+        "price":4990000,
+        "category":"new"
     }
 ]
