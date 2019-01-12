@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import NumberFormat from "react-number-format";
+import NavLink from "react-router-dom/NavLink";
+
 class RecentCardItem extends Component {
   displayRemoval = cons => {
     if (cons) {
@@ -22,9 +24,11 @@ class RecentCardItem extends Component {
     return (
       <div className="recentCard wrapper">
         <div className="card">
-          <div className="card-item row">
-            <div className="col-lg-4 col-sm-2">
-              <img src={this.props.tourImg} alt="" className="img-fluid" />
+          <div className="card-item row px-4"> 
+            <div className="cardItemImage p-2 col-lg-4 col-sm-2" style={{ textAlign: "center", }}>
+              <NavLink to={"/chi-tiet"}>
+                <img className="img-fluid" src={this.props.tourImg} alt="" />
+              </NavLink>
             </div>
             <div className="col-lg-7 col-sm-9">
               <div className="row row-top">

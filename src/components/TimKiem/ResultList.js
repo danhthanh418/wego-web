@@ -44,13 +44,13 @@ class ResultList extends Component {
     return (
       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <Card>
-          <div className="card-item row">
+          <div className="card-item row p-4">
             <div className="cardItemImage p-2 col-lg-4 col-sm-12" style={{ textAlign: "center" }}>
               <NavLink to={"/chi-tiet"}>
                 <img className="img-fluid" src={this.props.tourImg} alt="" />
               </NavLink>
             </div>
-            <div className="cardItemContent p-2 col-lg-7 col-sm-12">
+            <div className="cardItemContent p-2 col-lg-8 col-sm-12">
               <div className="cardItemTourNameDiv">
                 <NavLink to={"/chi-tiet"}>
                   <span className="cardItemTourName align-items-stretch">
