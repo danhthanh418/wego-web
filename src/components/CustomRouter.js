@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import Tour from './Tour'
 import AboutUs from './AboutUs'
-import Answer from './Answer'
-import Support from './Support'
 import Login from './Login'
 import TourDetail from './TourDetail'
 import Route  from 'react-router-dom/Route'
 import SearchDetail from './SearchDetail';
-import CamNangDetail from './CamNangDetail';
+import CamNangDetail from './CamNang/CamNangDetail';
 import Tips from './Tips';
 import TipsDetail from './TipsDetail';
 import CamNang from './CamNang/CamNang';
 import {Switch} from 'react-router-dom'
 import PageNotFound from './PageNotFound';
+import Answer from './Support/Answer';
+import Support from './Support/Support';
 class CustomRouter extends Component {
     render() {
         return (
